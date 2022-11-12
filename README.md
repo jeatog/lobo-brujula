@@ -2,3 +2,6 @@
 
 - Instalar las paqueterías con `npm i`.
 - Correrlo con `npm start`.
+
+# Para subir cambios
+- 
