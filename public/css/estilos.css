@@ -1,0 +1,85 @@
+
+#btn-menu {
+    display: none;
+}
+
+#btn-menu:checked ~ .container-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.caja{
+    float: left;
+    width: 30%;
+}
+.cont-menu {
+    width: 100%;
+    max-width: 350px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-85%);
+
+    overflow-y: auto;
+}
+
+#btn-menu:checked~.container-menu .cont-menu {
+    transform: translateX(0%);
+}
+/*
+.cont-menu nav {
+    transform: translateY(5%);
+}
+*/
+nav h1{
+    text-align: center;
+    color: #c7c7c7;
+}
+
+.cont-menu nav a , .cosa{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: #c7c7c7;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover, .cosa:hover {
+    border-left: 5px solid #c7c7c7;
+    background: #1f1f1f;
+}
+
+
+.cont-menu label {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* ******************* */
+.mapa{
+    float: left;
+    width: 69%;
+    height: 100vh;
+}
+.mapa img{
+    width: 99%;
+}
+
+
+/*Configuracion de la barra horizontal*/
+::-webkit-scrollbar{
+    height: 4px;
+    width: 4px;
+    background: gray;
+}
+::-webkit-scrollbar-thumb:horizontal{
+    background: #000;
+    border-radius: 10px;
+}
