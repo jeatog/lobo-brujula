@@ -1,4 +1,4 @@
-import React, { Suspense, useState } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import './App.css';
@@ -14,7 +14,18 @@ import Logo from './assets/logo.png';
 function App() {
    document.body.style.backgroundColor = "#00395E";
    const [estado, setEstado] = useState({ name: "Default" });
-   const [anchoPantalla, setAnchoPantalla] = useState('249px');
+   const [anchoPantalla, setAnchoPantalla] = useState('245px');
+   const [cargando, setCargando] = useState();
+
+   const [edificios, setEdificios] = useState([]);
+   const [banos, setBanos] = useState([]);
+   const [cubiculos, setCubiculos] = useState([]);
+   const [exteriores, setExteriores] = useState([]);
+   const [laboratorios, setLaboratorios] = useState([]);
+   const [puntosI, setPuntosI] = useState([]);
+   const [salones, setSalones] = useState([]);
+
+   const urlBase = "https://pruebavideoappweb.000webhostapp.com/back-funciones/funciones.php?X=";
 
    const handleClick = (sector) => {
       console.log('You clicked submit.', sector);
@@ -25,10 +36,85 @@ function App() {
 
    const colapsar = () => {
       collapseSidebar();
-      collapsed ? setAnchoPantalla('249px') : setAnchoPantalla('0px');
+      collapsed ? setAnchoPantalla('245px') : setAnchoPantalla('0px');
    }
 
-   console.log(estado)
+   const bajarTablas = async() => {
+      setCargando(true);
+      await fetch(urlBase + "1")
+      .then(res => res.json())
+      .then((data) => {
+         console.log("Baños", data)
+         setBanos(data);
+      })
+      .catch((error) => console.log(error))
+
+      await fetch(urlBase + "2")
+      .then(res => res.json())
+      .then((data) => {
+         console.log("Cubículos", data)
+         setCubiculos(data);
+      })
+      .catch((error) => console.log(error))
+
+      await fetch(urlBase + "3")
+      .then(res => res.json())
+      .then((data) => {
+         console.log("Edificios", data)
+         setEdificios(data);
+      })
+      .catch((error) => console.log(error))
+
+      await fetch(urlBase + "4")
+      .then(res => res.json())
+      .then((data) => {
+         console.log("Exteriores", data)
+         setExteriores(data);
+      })
+      .catch((error) => console.log(error))
+
+      await fetch(urlBase + "5")
+      .then(res => res.json())
+      .then((data) => {
+         console.log("Laboratorios", data)
+         setLaboratorios(data);
+      })
+      .catch((error) => console.log(error))
+
+      await fetch(urlBase + "6")
+      .then(res => res.json())
+      .then((data) => {
+         console.log("Puntos de interés", data)
+         setPuntosI(data);
+      })
+      .catch((error) => console.log(error))
+
+      await fetch(urlBase + "7")
+      .then(res => res.json())
+      .then((data) => {
+         console.log("Salones", data)
+         setSalones(data);
+      })
+      .catch((error) => console.log(error))
+      
+      setCargando(false);
+   }
+
+   // useEffect(() => {
+   //    bajarTablas();
+   // }, []);
+
+   if (cargando) {
+      return (
+        <div className="text-center my-50">
+          <p className="fs-3 fw-bolder user-select-none" style={{ color: 'white' }}>Obteniendo tablas...</p>
+          <div className="spinner-border m-5 text-white" role="status">
+            <span className="visually-hidden">Cargando...</span>
+          </div>
+        </div>
+      );
+    }
+
    return (
       <>
          <div className='Contenido' style={{ height: '100vh' }}>
@@ -1036,18 +1122,18 @@ function App() {
                </Sidebar>
             </div>
 
-            <div className='Maqueta form-check-inline' style={{ marginLeft: anchoPantalla, display: 'inline-block' }}>
+            <div className='Maqueta form-check-inline' style={{marginRight: '0px', marginLeft: anchoPantalla, display: 'inline-block', overflowX: 'hidden'}}>
                <div className='d-flex mb-3'>
-                  <Button onClick={() => colapsar()}><i className='bi bi-list'></i></Button>
+                  <Button style={{backgroundColor: '#b2c0cb', color: '#212529'}}  onClick={() => colapsar()}><i className='bi bi-list'></i></Button>
                   <h1 style={{ color: '#eee', textAlign: 'center', width: '100%' }}>Lobo Brújula</h1>
                </div>
 
-               <div style={{ display: 'inline-flex' }}>
+               <div style={{ display: 'inline-flex', width: '100%', marginLeft: '1%' }}>
                   <Canvas
                      camera={{ position: [-20, 3, 5.25], fov: 15 }}
                      style={{
-                        width: '50vw',
-                        height: '94vh'
+                        width: '100vh !important',
+                        height: '100vh !important',
                      }}
                   >
 

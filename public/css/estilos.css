@@ -77,7 +77,7 @@ nav h1{
 ::-webkit-scrollbar{
     height: 4px;
     width: 4px;
-    background: gray;
+    background: rgba(128, 128, 128, 0);
 }
 ::-webkit-scrollbar-thumb:horizontal{
     background: #000;
