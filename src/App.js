@@ -8,6 +8,7 @@ import { Button, Form, FormGroup, Input, InputGroup, InputGroupText, Label } fro
 import "bootstrap/dist/css/bootstrap.min.css"
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Logo from './assets/logo.png';
+import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet'
 
 /*Hola mundo */
 
@@ -39,64 +40,64 @@ function App() {
       collapsed ? setAnchoPantalla('245px') : setAnchoPantalla('0px');
    }
 
-   const bajarTablas = async() => {
+   const bajarTablas = async () => {
       setCargando(true);
       await fetch(urlBase + "1")
-      .then(res => res.json())
-      .then((data) => {
-         console.log("Baños", data)
-         setBanos(data);
-      })
-      .catch((error) => console.log(error))
+         .then(res => res.json())
+         .then((data) => {
+            console.log("Baños", data)
+            setBanos(data);
+         })
+         .catch((error) => console.log(error))
 
       await fetch(urlBase + "2")
-      .then(res => res.json())
-      .then((data) => {
-         console.log("Cubículos", data)
-         setCubiculos(data);
-      })
-      .catch((error) => console.log(error))
+         .then(res => res.json())
+         .then((data) => {
+            console.log("Cubículos", data)
+            setCubiculos(data);
+         })
+         .catch((error) => console.log(error))
 
       await fetch(urlBase + "3")
-      .then(res => res.json())
-      .then((data) => {
-         console.log("Edificios", data)
-         setEdificios(data);
-      })
-      .catch((error) => console.log(error))
+         .then(res => res.json())
+         .then((data) => {
+            console.log("Edificios", data)
+            setEdificios(data);
+         })
+         .catch((error) => console.log(error))
 
       await fetch(urlBase + "4")
-      .then(res => res.json())
-      .then((data) => {
-         console.log("Exteriores", data)
-         setExteriores(data);
-      })
-      .catch((error) => console.log(error))
+         .then(res => res.json())
+         .then((data) => {
+            console.log("Exteriores", data)
+            setExteriores(data);
+         })
+         .catch((error) => console.log(error))
 
       await fetch(urlBase + "5")
-      .then(res => res.json())
-      .then((data) => {
-         console.log("Laboratorios", data)
-         setLaboratorios(data);
-      })
-      .catch((error) => console.log(error))
+         .then(res => res.json())
+         .then((data) => {
+            console.log("Laboratorios", data)
+            setLaboratorios(data);
+         })
+         .catch((error) => console.log(error))
 
       await fetch(urlBase + "6")
-      .then(res => res.json())
-      .then((data) => {
-         console.log("Puntos de interés", data)
-         setPuntosI(data);
-      })
-      .catch((error) => console.log(error))
+         .then(res => res.json())
+         .then((data) => {
+            console.log("Puntos de interés", data)
+            setPuntosI(data);
+         })
+         .catch((error) => console.log(error))
 
       await fetch(urlBase + "7")
-      .then(res => res.json())
-      .then((data) => {
-         console.log("Salones", data)
-         setSalones(data);
-      })
-      .catch((error) => console.log(error))
-      
+         .then(res => res.json())
+         .then((data) => {
+            console.log("Salones", data)
+            setSalones(data);
+         })
+         .catch((error) => console.log(error))
+
       setCargando(false);
    }
 
@@ -106,19 +107,19 @@ function App() {
 
    if (cargando) {
       return (
-        <div className="text-center my-50">
-          <p className="fs-3 fw-bolder user-select-none" style={{ color: 'white' }}>Obteniendo tablas...</p>
-          <div className="spinner-border m-5 text-white" role="status">
-            <span className="visually-hidden">Cargando...</span>
-          </div>
-        </div>
+         <div className="text-center my-50">
+            <p className="fs-3 fw-bolder user-select-none" style={{ color: 'white' }}>Obteniendo tablas...</p>
+            <div className="spinner-border m-5 text-white" role="status">
+               <span className="visually-hidden">Cargando...</span>
+            </div>
+         </div>
       );
-    }
+   }
 
    return (
       <>
          <div className='Contenido' style={{ height: '100vh' }}>
-            <div className='d-flex' width='100%' style={{ overflowY: 'scroll', position: 'fixed', height: '100vh' }}>
+            <div className='d-flex align-items-center' width='100%' style={{ overflowY: 'scroll', position: 'fixed', height: '100vh', backgroundColor: '#b2c0cb' }}>
                <Sidebar className='d-flex' collapsedWidth='0px'>
                   <Menu >
                      <div className='d-flex justify-content-center'>
@@ -1122,14 +1123,28 @@ function App() {
                </Sidebar>
             </div>
 
-            <div className='Maqueta form-check-inline' style={{marginRight: '0px', marginLeft: anchoPantalla, display: 'inline-block', overflowX: 'hidden'}}>
-               <div className='d-flex mb-3'>
-                  <Button style={{backgroundColor: '#b2c0cb', color: '#212529'}}  onClick={() => colapsar()}><i className='bi bi-list'></i></Button>
-                  <h1 style={{ color: '#eee', textAlign: 'center', width: '100%' }}>Lobo Brújula</h1>
+            <div className='Maqueta form-check-inline' style={{ marginRight: '0px', marginLeft: anchoPantalla, display: 'inline-block', overflowX: 'hidden', width: '100%'}}>
+               <div className='d-flex'>
+                  <Button style={{ backgroundColor: '#b2c0cb', color: '#212529', height: '44px' }} onClick={() => colapsar()}><i className='bi bi-list'></i></Button>
+                  <h1 className='d-flex align-items-center justify-content-center' style={{ color: '#eee', width: '100%', height: '100px', fontWeight: 'bolder', fontFamily: 'Paytone One, sans-serif' }}>Lobo Brújula</h1>
                </div>
 
-               <div style={{ display: 'inline-flex', width: '100%', marginLeft: '1%' }}>
-                  <Canvas
+               <div className='d-flex justify-content-center align-items-center' style={{ display: 'inline-flex', width: '100%', marginLeft: '5px', height: '90%'}}>
+                  <div className='d-flex justify-content-center Mapa' id="mapa" >
+                     <MapContainer center={[19.004989, -98.204397]} zoom={300} scrollWheelZoom={false}>
+                        <TileLayer
+                           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        />
+                        <Marker position={[19.004989, -98.204397]}>
+                           <Popup>
+                              <p style={{fontWeight: 'bold'}}>Fuente FCC</p>
+                              <p>Ejemplo Marcador</p>
+                           </Popup>
+                        </Marker>
+                     </MapContainer>
+                  </div>
+                  {/* <Canvas
                      camera={{ position: [-20, 3, 5.25], fov: 15 }}
                      style={{
                         width: '100vh !important',
@@ -1163,9 +1178,9 @@ function App() {
                      <Button onClick={() => handleClick("Laboratorio1")}>Laboratorio1 </Button>
                      <Button onClick={() => handleClick("Laboratorio2")}>Laboratorio2 </Button>
                      <Button onClick={() => handleClick("LaboratorioRH")}>Laboratorios de Redes y Hardware </Button>
-                     <br />
+                     <br /> 
 
-                  </div>
+                  </div> */}
                </div>
             </div>
 

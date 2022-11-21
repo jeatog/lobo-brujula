@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
 
 .App {
   text-align: center;
@@ -33,7 +35,7 @@
 
 .Contenido {
   display: flex;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .Botones {
@@ -91,6 +93,16 @@ ul.sc-eDvSVe.gnJkew{
 
 div.sc-jSUZER.daWgIu.sub-menu-content{
   background-color: #b2c0cb;
+}
+
+.leaflet-container{
+  width: 620px;
+  height: 510px;
+  border-radius: 20px;
+}
+
+.Mapa{
+  border: #004df3;
 }
 
 @keyframes App-logo-spin {
