@@ -7,6 +7,7 @@ import { Sidebar, Menu, MenuItem, useProSidebar, SubMenu } from 'react-pro-sideb
 import { Button, Form, FormGroup, Input, InputGroup, InputGroupText, Label } from 'reactstrap';
 import "bootstrap/dist/css/bootstrap.min.css"
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Logo from './assets/logo.png';
 
 /*Hola mundo */
 
@@ -34,6 +35,9 @@ function App() {
             <div className='d-flex' width='100%' style={{ overflowY: 'scroll', position: 'fixed', height: '100vh' }}>
                <Sidebar className='d-flex' collapsedWidth='0px'>
                   <Menu >
+                     <div className='d-flex justify-content-center'>
+                        <img src={Logo} alt='Logo' style={{ height: '150px', position: 'relative' }} />
+                     </div>
                      <Label className='d-flex justify-content-center' size='lg' style={{ fontWeight: 'bold' }}>Menú</Label>
                      <div className='d-flex justify-content-center'>
                         <InputGroup style={{ width: '80%' }}>
@@ -44,7 +48,7 @@ function App() {
                      <hr />
                      <SubMenu label="Accesos" style={{ textAlign: 'center', fontSize: '1.3rem' }}>
                         <MenuItem>
-                           <Form>
+                           <Form style={{ textAlign: 'center' }}>
                               <FormGroup check inline>
                                  <Input type='checkbox' />
                                  <Label check>Acceso 9</Label>
@@ -58,8 +62,8 @@ function App() {
                      </SubMenu>
 
                      <SubMenu label="Edificios" style={{ textAlign: 'center', fontSize: '1.3rem' }}>
-                        <MenuItem style={{ height: '86px' }}>
-                           <Form>
+                        <MenuItem style={{ height: 'auto' }}>
+                           <Form style={{ textAlign: 'center' }}>
                               <FormGroup check inline>
                                  <Input type='checkbox' />
                                  <Label check>CCO1</Label>
@@ -70,7 +74,7 @@ function App() {
                               </FormGroup>
                            </Form>
 
-                           <Form>
+                           <Form style={{ textAlign: 'center' }}>
                               <FormGroup check inline>
                                  <Input type='checkbox' />
                                  <Label check>CCO3</Label>
@@ -80,7 +84,8 @@ function App() {
                                  <Label check>CCO4</Label>
                               </FormGroup>
                            </Form>
-                           <Form>
+
+                           <Form style={{ textAlign: 'center' }}>
                               <FormGroup check inline>
                                  <Input type='checkbox' />
                                  <Label check>CCO5</Label>
@@ -90,83 +95,936 @@ function App() {
                      </SubMenu>
 
                      <SubMenu label="Salones" style={{ textAlign: 'center', fontSize: '1.3rem' }}>
-                        <MenuItem>
+                        <MenuItem className='d-flex justify-content-center' style={{ height: 'auto' }}>
+                           <SubMenu label="CCO1" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form className='mt-3' style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>1</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>2</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>3</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>4</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>5</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>6</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
+
+                           <SubMenu label="CCO2" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form className='mt-3' style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>305</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
+
+                           <SubMenu label="CCO3" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form className='mt-3' style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>208</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>002</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>003</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
+
+                           <SubMenu label="CCO4" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form className='mt-3' style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>102</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>102</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>103</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>104</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>201</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>202</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>203</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>204</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>301</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>303</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>304</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>305</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>307</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>308</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>401</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>402</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>403</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>404</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
+
+                           <SubMenu label="CCO5" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form className='mt-3' style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>201</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>202</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>203</Label>
+                                 </FormGroup>
+                              </Form>
+                           </SubMenu>
                         </MenuItem>
                      </SubMenu>
 
                      <SubMenu label="Laboratorios" style={{ textAlign: 'center', fontSize: '1.3rem' }}>
-                        <MenuItem style={{ height: '110px' }}>
+                        <MenuItem className='d-flex justify-content-center' style={{ height: 'auto' }}>
+                           <SubMenu label="CCO2" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form className='mt-3' style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>201</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>202</Label>
+                                 </FormGroup>
+                              </Form>
 
-                           <Form>
-                              <FormGroup check inline>
-                                 <Input type='checkbox' />
-                                 <Label check>Lab. Redes</Label>
-                              </FormGroup>
-                           </Form>
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>203</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>204</Label>
+                                 </FormGroup>
+                              </Form>
 
-                           <Form>
-                              <FormGroup check inline>
-                                 <Input type='checkbox' />
-                                 <Label check>Lab. Hardware</Label>
-                              </FormGroup>
-                           </Form>
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>205</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>206</Label>
+                                 </FormGroup>
+                              </Form>
 
-                           <Form>
-                              <FormGroup check inline>
-                                 <Input type='checkbox' />
-                                 <Label check>Lab. Queso 1</Label>
-                              </FormGroup>
-                           </Form>
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>207</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>208</Label>
+                                 </FormGroup>
+                              </Form>
 
-                           <Form>
-                              <FormGroup check inline>
-                                 <Input type='checkbox' />
-                                 <Label check>Lab. Queso 2</Label>
-                              </FormGroup>
-                           </Form>
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>302</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>303</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>304</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
+
+                           <SubMenu label="CCO3" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form className='mt-3' style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>101</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>104</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>109</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>114</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>201</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>204</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>205</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>301</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>302</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>303</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>309</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>310</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>310A</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
+
+                           <SubMenu label="CCO4" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form className='mt-3' style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>206</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>306</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
+
+                           <SubMenu label="CCO5" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form className='mt-3' style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>207</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
                         </MenuItem>
                      </SubMenu>
 
                      <SubMenu label="Cubículos" style={{ textAlign: 'center', fontSize: '1.3rem' }}>
-                        <MenuItem style={{ height: '100px' }}>
-                           <Form>
-                              <FormGroup check inline>
-                                 <Input type='checkbox' />
-                                 <Label check>CCO1</Label>
-                              </FormGroup>
-                              <FormGroup check inline>
-                                 <Input type='checkbox' />
-                                 <Label check>CCO2</Label>
-                              </FormGroup>
-                           </Form>
+                        <MenuItem className='d-flex justify-content-center' style={{ height: 'auto' }}>
+                           <SubMenu label="CCO1" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form className='mt-3' style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>103</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>104</Label>
+                                 </FormGroup>
+                              </Form>
 
-                           <Form>
-                              <FormGroup check inline>
-                                 <Input type='checkbox' />
-                                 <Label check>CCO3</Label>
-                              </FormGroup>
-                              <FormGroup check inline>
-                                 <Input type='checkbox' />
-                                 <Label check>CCO4</Label>
-                              </FormGroup>
-                           </Form>
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>105</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>106</Label>
+                                 </FormGroup>
+                              </Form>
 
-                           <Form>
-                              <FormGroup check inline>
-                                 <Input type='checkbox' />
-                                 <Label check>CCO5</Label>
-                              </FormGroup>
-                           </Form>
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>107</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>108</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>109</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>110</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>111</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>112</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>113</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>114</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>115</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>116</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>117</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>118</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>119</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>120</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>121</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>122</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>123</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>124</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>125</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
+
+                           <SubMenu label="CCO2" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>103</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>104</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>106</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>107</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>108</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>109</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>110</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>111</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>112</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>113</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>114</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>209</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>301</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>305A</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>305B</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>306</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>307</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>308</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>309</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>310</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>107</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>311</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
+
+                           <SubMenu label="CCO3" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form className='mt-3' style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>6</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>7</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>8</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>9</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>10</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>11</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>105</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>106</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>107</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>108</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>102</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>103</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>110</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>111</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>112</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>113</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>203</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>206</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>206B</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>207</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>304</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>308</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>311</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>312</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>313</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
+
+                           <SubMenu label="CCO4" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form className='mt-3' style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>108</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>109</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>110</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>302</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>302A</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
+
+                           <SubMenu label="CCO5" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form className='mt-3' style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>101</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>102</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>103</Label>
+                                 </FormGroup>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>104</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>106</Label>
+                                 </FormGroup>
+                              </Form>
+                           </SubMenu>
                         </MenuItem>
                      </SubMenu>
 
                      <SubMenu label="Puntos de interés" style={{ textAlign: 'center', fontSize: '1.3rem' }}>
-                        <MenuItem>
-                        </MenuItem>
-                     </SubMenu>
+                        <MenuItem className='d-flex justify-content-center' style={{ height: 'auto' }}>
+                           <SubMenu label="CCO1" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form className='mt-3' style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>Unidad Médica</Label>
+                                 </FormGroup>
+                              </Form>
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>Autoacceso</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
 
-                     <SubMenu label="Exteriores" style={{ textAlign: 'center', fontSize: '1.3rem' }}>
-                        <MenuItem>
+                           <SubMenu label="CCO2" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>Comedor</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>Auditorio</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
+
+                           <SubMenu label="CCO3" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>Biblioteca</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
+
+                           <SubMenu label="CCO4" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>Servicio Social y Prácticas</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>Área Secretarial</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>Archivo</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>Dirección</Label>
+                                 </FormGroup>
+                              </Form>
+                              <hr />
+                           </SubMenu>
+
+                           <SubMenu label="Exteriores" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>Cancha Deportiva</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>Cafetería</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>Estación de Lobobicis</Label>
+                                 </FormGroup>
+                              </Form>
+
+                              <Form style={{ textAlign: 'center' }}>
+                                 <FormGroup check inline>
+                                    <Input type='checkbox' />
+                                    <Label check>Parada de Lobobús</Label>
+                                 </FormGroup>
+                              </Form>
+                           </SubMenu>
                         </MenuItem>
                      </SubMenu>
 
@@ -184,7 +1042,7 @@ function App() {
                   <h1 style={{ color: '#eee', textAlign: 'center', width: '100%' }}>Lobo Brújula</h1>
                </div>
 
-               <div style={{display: 'inline-flex'}}>
+               <div style={{ display: 'inline-flex' }}>
                   <Canvas
                      camera={{ position: [-20, 3, 5.25], fov: 15 }}
                      style={{

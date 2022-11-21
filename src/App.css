@@ -81,6 +81,18 @@ a.sc-pyfCe.eVPmrC.menu-anchor{
   font-size: 0.9rem;
 }
 
+a.sc-pyfCe.eVPmrC.menu-anchor:hover{
+  color: unset;
+}
+
+ul.sc-eDvSVe.gnJkew{
+  background-color: #b2c0cb;
+}
+
+div.sc-jSUZER.daWgIu.sub-menu-content{
+  background-color: #b2c0cb;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
