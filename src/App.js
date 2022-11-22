@@ -24,12 +24,7 @@ function App() {
    const toggle = () => { setModal(!modal); }
 
    const [edificios, setEdificios] = useState([]);
-   const [banos, setBanos] = useState([]);
-   const [cubiculos, setCubiculos] = useState([]);
    const [exteriores, setExteriores] = useState([]);
-   const [laboratorios, setLaboratorios] = useState([]);
-   const [puntosI, setPuntosI] = useState([]);
-   const [salones, setSalones] = useState([]);
 
    const urlBase = "https://pruebavideoappweb.000webhostapp.com/back-funciones/funciones.php?X=";
 
@@ -47,22 +42,6 @@ function App() {
 
    const bajarTablas = async () => {
       setCargando(true);
-      await fetch(urlBase + "1")
-         .then(res => res.json())
-         .then((data) => {
-            console.log("Baños", data)
-            setBanos(data);
-         })
-         .catch((error) => console.log(error))
-
-      await fetch(urlBase + "2")
-         .then(res => res.json())
-         .then((data) => {
-            console.log("Cubículos", data)
-            setCubiculos(data);
-         })
-         .catch((error) => console.log(error))
-
       await fetch(urlBase + "3")
          .then(res => res.json())
          .then((data) => {
@@ -76,30 +55,6 @@ function App() {
          .then((data) => {
             console.log("Exteriores", data)
             setExteriores(data);
-         })
-         .catch((error) => console.log(error))
-
-      await fetch(urlBase + "5")
-         .then(res => res.json())
-         .then((data) => {
-            console.log("Laboratorios", data)
-            setLaboratorios(data);
-         })
-         .catch((error) => console.log(error))
-
-      await fetch(urlBase + "6")
-         .then(res => res.json())
-         .then((data) => {
-            console.log("Puntos de interés", data)
-            setPuntosI(data);
-         })
-         .catch((error) => console.log(error))
-
-      await fetch(urlBase + "7")
-         .then(res => res.json())
-         .then((data) => {
-            console.log("Salones", data)
-            setSalones(data);
          })
          .catch((error) => console.log(error))
 
@@ -208,9 +163,43 @@ function App() {
    let [cco3Punto1, setCco3Punto1] = useState();
 
    let [cco4, setCco4] = useState();
-
+   let [cco4Sal1, setCco4Sal1] = useState();
+   let [cco4Sal2, setCco4Sal2] = useState();
+   let [cco4Sal3, setCco4Sal3] = useState();
+   let [cco4Sal4, setCco4Sal4] = useState();
+   let [cco4Sal5, setCco4Sal5] = useState();
+   let [cco4Sal6, setCco4Sal6] = useState();
+   let [cco4Sal7, setCco4Sal7] = useState();
+   let [cco4Sal8, setCco4Sal8] = useState();
+   let [cco4Sal9, setCco4Sal9] = useState();
+   let [cco4Sal10, setCco4Sal10] = useState();
+   let [cco4Sal11, setCco4Sal11] = useState();
+   let [cco4Sal12, setCco4Sal12] = useState();
+   let [cco4Sal13, setCco4Sal13] = useState();
+   let [cco4Sal14, setCco4Sal14] = useState();
+   let [cco4Sal15, setCco4Sal15] = useState();
+   let [cco4Sal16, setCco4Sal16] = useState();
+   let [cco4Sal17, setCco4Sal17] = useState();
+   let [cco4Sal18, setCco4Sal18] = useState();
+   let [cuboCco4_1, setCuboCco4_1] = useState();
+   let [cuboCco4_2, setCuboCco4_2] = useState();
+   let [cuboCco4_3, setCuboCco4_3] = useState();
+   let [cuboCco4_4, setCuboCco4_4] = useState();
+   let [cuboCco4_5, setCuboCco4_5] = useState();
+   let [cco4Punto1, setCco4Punto1] = useState();
+   let [cco4Punto2, setCco4Punto2] = useState();
+   let [cco4Punto3, setCco4Punto3] = useState();
+   let [cco4Punto4, setCco4Punto4] = useState();
 
    let [cco5, setCco5] = useState();
+   let [cco5Sal1, setCco5Sal1] = useState();
+   let [cco5Sal2, setCco5Sal2] = useState();
+   let [cco5Sal3, setCco5Sal3] = useState();
+   let [cuboCco5_1, setCuboCco5_1] = useState();
+   let [cuboCco5_2, setCuboCco5_2] = useState();
+   let [cuboCco5_3, setCuboCco5_3] = useState();
+   let [cuboCco5_4, setCuboCco5_4] = useState();
+   let [cuboCco5_5, setCuboCco5_5] = useState();
 
    const marcadorAcceso9 = event => {
       if (event.target.checked) {
@@ -1608,39 +1597,607 @@ function App() {
       }
    }
 
-   const marcadorCCO4 = (event, nombre, categoria, ubicacion) => {
-      if (event.target.checked) {
-         let urlIndicaciones = 'https://www.google.com/maps/dir/?api=1&destination=' + edificios[3].lat + ',' + edificios[3].lon;
-         setCco4(
-            <Marker position={[edificios[3].lat, edificios[3].lon]}>
-               <Popup>
-                  <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
-                  <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
-                  <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
-                  <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
-               </Popup>
-            </Marker>
-         );
-      } else {
-         setCco4();
+   const marcadorCCO4 = (event, nombre, categoria, ubicacion, id) => {
+      let urlIndicaciones = 'https://www.google.com/maps/dir/?api=1&destination=' + edificios[3].lat + ',' + edificios[3].lon;
+      switch (id) {
+         case "edif":
+            if (event.target.checked) {
+               setCco4(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4();
+            }
+            break;
+         case "sal1":
+            if (event.target.checked) {
+               setCco4Sal1(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal1();
+            }
+            break;
+         case "sal2":
+            if (event.target.checked) {
+               setCco4Sal2(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal2();
+            }
+            break;
+         case "sal3":
+            if (event.target.checked) {
+               setCco4Sal3(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal3();
+            }
+            break;
+         case "sal4":
+            if (event.target.checked) {
+               setCco4Sal4(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal4();
+            }
+            break;
+         case "sal5":
+            if (event.target.checked) {
+               setCco4Sal5(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal5();
+            }
+            break;
+         case "sal6":
+            if (event.target.checked) {
+               setCco4Sal6(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal6();
+            }
+            break;
+         case "sal7":
+            if (event.target.checked) {
+               setCco4Sal7(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal7();
+            }
+            break;
+         case "sal8":
+            if (event.target.checked) {
+               setCco4Sal8(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal8();
+            }
+            break;
+         case "sal9":
+            if (event.target.checked) {
+               setCco4Sal9(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal9();
+            }
+            break;
+         case "sal10":
+            if (event.target.checked) {
+               setCco4Sal10(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal10();
+            }
+            break;
+         case "sal11":
+            if (event.target.checked) {
+               setCco4Sal11(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal11();
+            }
+            break;
+         case "sal12":
+            if (event.target.checked) {
+               setCco4Sal12(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal12();
+            }
+            break;
+         case "sal13":
+            if (event.target.checked) {
+               setCco4Sal13(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal13();
+            }
+            break;
+         case "sal14":
+            if (event.target.checked) {
+               setCco4Sal14(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal14();
+            }
+            break;
+         case "sal15":
+            if (event.target.checked) {
+               setCco4Sal15(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal15();
+            }
+            break;
+         case "sal16":
+            if (event.target.checked) {
+               setCco4Sal16(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal16();
+            }
+            break;
+         case "sal17":
+            if (event.target.checked) {
+               setCco4Sal17(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal17();
+            }
+            break;
+         case "sal18":
+            if (event.target.checked) {
+               setCco4Sal18(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Sal18();
+            }
+            break;
+         case "cubo1":
+            if (event.target.checked) {
+               setCuboCco4_1(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCuboCco4_1();
+            }
+            break;
+         case "cubo2":
+            if (event.target.checked) {
+               setCuboCco4_2(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCuboCco4_2();
+            }
+            break;
+         case "cubo3":
+            if (event.target.checked) {
+               setCuboCco4_3(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCuboCco4_3();
+            }
+            break;
+         case "cubo4":
+            if (event.target.checked) {
+               setCuboCco4_4(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCuboCco4_4();
+            }
+            break;
+         case "cubo5":
+            if (event.target.checked) {
+               setCuboCco4_5(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCuboCco4_5();
+            }
+            break;
+         case "sersoc":
+            if (event.target.checked) {
+               setCco4Punto1(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Punto1();
+            }
+            break;
+         case "secrea":
+            if (event.target.checked) {
+               setCco4Punto2(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Punto2();
+            }
+            break;
+         case "archivo":
+            if (event.target.checked) {
+               setCco4Punto3(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Punto3();
+            }
+            break;
+         case "direccion":
+            if (event.target.checked) {
+               setCco4Punto4(
+                  <Marker position={[edificios[3].lat, edificios[3].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco4Punto4();
+            }
+            break;
       }
    }
 
-   const marcadorCCO5 = (event, nombre, categoria, ubicacion) => {
-      if (event.target.checked) {
-         let urlIndicaciones = 'https://www.google.com/maps/dir/?api=1&destination=' + edificios[4].lat + ',' + edificios[4].lon;
-         setCco5(
-            <Marker position={[edificios[4].lat, edificios[4].lon]}>
-               <Popup>
-                  <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
-                  <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
-                  <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
-                  <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
-               </Popup>
-            </Marker>
-         );
-      } else {
-         setCco5();
+   const marcadorCCO5 = (event, nombre, categoria, ubicacion, id) => {
+      let urlIndicaciones = 'https://www.google.com/maps/dir/?api=1&destination=' + edificios[4].lat + ',' + edificios[4].lon;
+      switch (id) {
+         case "edif":
+            if (event.target.checked) {
+               setCco5(
+                  <Marker position={[edificios[4].lat, edificios[4].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco5();
+            }
+            break;
+         case "sal1":
+            if (event.target.checked) {
+               setCco5Sal1(
+                  <Marker position={[edificios[4].lat, edificios[4].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco5Sal1();
+            }
+            break;
+         case "sal2":
+            if (event.target.checked) {
+               setCco5Sal2(
+                  <Marker position={[edificios[4].lat, edificios[4].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco5Sal2();
+            }
+            break;
+         case "sal3":
+            if (event.target.checked) {
+               setCco5Sal3(
+                  <Marker position={[edificios[4].lat, edificios[4].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCco5Sal3();
+            }
+            break;
+         case "cubo1":
+            if (event.target.checked) {
+               setCuboCco5_1(
+                  <Marker position={[edificios[4].lat, edificios[4].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCuboCco5_1();
+            }
+            break;
+         case "cubo2":
+            if (event.target.checked) {
+               setCuboCco5_2(
+                  <Marker position={[edificios[4].lat, edificios[4].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCuboCco5_2();
+            }
+            break;
+         case "cubo3":
+            if (event.target.checked) {
+               setCuboCco5_3(
+                  <Marker position={[edificios[4].lat, edificios[4].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCuboCco5_3();
+            }
+            break;
+         case "cubo4":
+            if (event.target.checked) {
+               setCuboCco5_4(
+                  <Marker position={[edificios[4].lat, edificios[4].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCuboCco5_4();
+            }
+            break;
+         case "cubo5":
+            if (event.target.checked) {
+               setCuboCco5_5(
+                  <Marker position={[edificios[4].lat, edificios[4].lon]}>
+                     <Popup>
+                        <p style={{ fontWeight: 'bold', textAlign: 'center' }}>{nombre}</p>
+                        <p style={{ textAlign: 'center' }}>Categoría: {categoria}</p>
+                        <p style={{ textAlign: 'center' }}>Ubicación: {ubicacion}</p>
+                        <a style={{ textAlign: 'center' }} href={urlIndicaciones} target='_blank' rel='noreferrer'>Cómo llegar</a>
+                     </Popup>
+                  </Marker>
+               );
+            } else {
+               setCuboCco5_5();
+            }
+            break;
       }
    }
 
@@ -1721,14 +2278,14 @@ function App() {
                                  <Label check>CCO3</Label>
                               </FormGroup>
                               <FormGroup check inline>
-                                 <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'CCO4', 'Edificio', 'CCO4')} />
+                                 <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'CCO4', 'Edificio', 'CCO4', 'edif')} />
                                  <Label check>CCO4</Label>
                               </FormGroup>
                            </Form>
 
                            <Form style={{ textAlign: 'center' }}>
                               <FormGroup check inline>
-                                 <Input type='checkbox' onChange={(event) => marcadorCCO5(event, 'CCO5', 'Edificio', 'CCO5')} />
+                                 <Input type='checkbox' onChange={(event) => marcadorCCO5(event, 'CCO5', 'Edificio', 'CCO5', 'edif')} />
                                  <Label check>CCO5</Label>
                               </FormGroup>
                            </Form>
@@ -1807,99 +2364,99 @@ function App() {
                            <SubMenu label="CCO4" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
                               <Form className='mt-3' style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
-                                    <Label check>102</Label>
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 101', 'Salón de Clases', 'CCO4 - Planta Baja', 'sal1')} />
+                                    <Label check>101</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 102', 'Salón de Clases', 'CCO4 - Planta Baja', 'sal2')} />
                                     <Label check>102</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 103', 'Salón de Clases', 'CCO4 - Planta Baja', 'sal3')} />
                                     <Label check>103</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 104', 'Salón de Clases', 'CCO4 - Planta Baja', 'sal4')} />
                                     <Label check>104</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 201', 'Salón de Clases', 'CCO4 - Primera Planta', 'sal5')} />
                                     <Label check>201</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 202', 'Salón de Clases', 'CCO4 - Primera Planta', 'sal6')} />
                                     <Label check>202</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 203', 'Salón de Clases', 'CCO4 - Primera Planta', 'sal7')} />
                                     <Label check>203</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 204', 'Salón de Clases', 'CCO4 - Primera Planta', 'sal8')} />
                                     <Label check>204</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 301', 'Salón de Clases', 'CCO4 - Segunda Planta', 'sal9')} />
                                     <Label check>301</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 303', 'Salón de Clases', 'CCO4 - Segunda Planta', 'sal10')} />
                                     <Label check>303</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 304', 'Salón de Clases', 'CCO4 - Segunda Planta', 'sal11')} />
                                     <Label check>304</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 305', 'Salón de Clases', 'CCO4 - Segunda Planta', 'sal12')} />
                                     <Label check>305</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 307', 'Salón de Clases', 'CCO4 - Segunda Planta', 'sal13')} />
                                     <Label check>307</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 308', 'Salón de Clases', 'CCO4 - Segunda Planta', 'sal14')} />
                                     <Label check>308</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 401', 'Salón de Clases', 'CCO4 - Tercer Planta', 'sal15')} />
                                     <Label check>401</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 402', 'Salón de Clases', 'CCO4 - Tercer Planta', 'sal16')} />
                                     <Label check>402</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 403', 'Salón de Clases', 'CCO4 - Tercer Planta', 'sal17')} />
                                     <Label check>403</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, 'Salón 404', 'Salón de Clases', 'CCO4 - Tercer Planta', 'sal18')} />
                                     <Label check>404</Label>
                                  </FormGroup>
                               </Form>
@@ -1909,18 +2466,18 @@ function App() {
                            <SubMenu label="CCO5" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
                               <Form className='mt-3' style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO5(event, 'Salón 201', 'Salón de Clases', 'CCO5 - Primera Planta', 'sal1')} />
                                     <Label check>201</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO5(event, 'Salón 202', 'Salón de Clases', 'CCO5 - Primera Planta', 'sal2')} />
                                     <Label check>202</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO5(event, 'Salón 203', 'Salón de Clases', 'CCO5 - Primera Planta', 'sal3')} />
                                     <Label check>203</Label>
                                  </FormGroup>
                               </Form>
@@ -2353,121 +2910,121 @@ function App() {
                            <SubMenu label="CCO3" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
                               <Form className='mt-3' style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '6', 'Cubículo', 'CCO3 - Planta Baja', 'cubo1')} />
                                     <Label check>6</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '7', 'Cubículo', 'CCO3 - Planta Baja', 'cubo2')} />
                                     <Label check>7</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '8', 'Cubículo', 'CCO3 - Planta Baja', 'cubo3')} />
                                     <Label check>8</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '9', 'Cubículo', 'CCO3 - Planta Baja', 'cubo4')} />
                                     <Label check>9</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '10', 'Cubículo', 'CCO3 - Planta Baja', 'cubo5')} />
                                     <Label check>10</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '11', 'Cubículo', 'CCO3 - Planta Baja', 'cubo6')} />
                                     <Label check>11</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '105', 'Cubículo', 'CCO3 - Planta Baja', 'cubo7')} />
                                     <Label check>105</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '106', 'Cubículo', 'CCO3 - Planta Baja', 'cubo8')} />
                                     <Label check>106</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '107', 'Cubículo', 'CCO3 - Planta Baja', 'cubo9')} />
                                     <Label check>107</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '108', 'Cubículo', 'CCO3 - Planta Baja', 'cubo10')} />
                                     <Label check>108</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '102', 'Cubículo', 'CCO3 - Planta Baja', 'cubo11')} />
                                     <Label check>102</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '103', 'Cubículo', 'CCO3 - Planta Baja', 'cubo12')} />
                                     <Label check>103</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '110', 'Cubículo', 'CCO3 - Planta Baja', 'cubo13')} />
                                     <Label check>110</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '111', 'Cubículo', 'CCO3 - Planta Baja', 'cubo14')} />
                                     <Label check>111</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '112', 'Cubículo', 'CCO3 - Planta Baja', 'cubo15')} />
                                     <Label check>112</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '113', 'Cubículo', 'CCO3 - Planta Baja', 'cubo16')} />
                                     <Label check>113</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '203', 'Cubículo', 'CCO3 - Primera Planta', 'cubo17')} />
                                     <Label check>203</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '206', 'Cubículo', 'CCO3 - Primera Planta', 'cubo18')} />
                                     <Label check>206</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '206-B', 'Cubículo', 'CCO3 - Primera Planta', 'cubo19')} />
                                     <Label check>206B</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '207', 'Cubículo', 'CCO3 - Primera Planta', 'cubo20')} />
                                     <Label check>207</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '304', 'Cubículo', 'CCO3 - Segunda Planta', 'cubo21')} />
                                     <Label check>304</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO3(event, '308', 'Cubículo', 'CCO3 - Segunda Planta', 'cubo22')} />
                                     <Label check>308</Label>
                                  </FormGroup>
                               </Form>
@@ -2477,29 +3034,29 @@ function App() {
                            <SubMenu label="CCO4" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
                               <Form className='mt-3' style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, '108', 'Cubículo', 'CCO4 - Planta Baja', 'cubo1')} />
                                     <Label check>108</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, '109', 'Cubículo', 'CCO4 - Planta Baja', 'cubo2')} />
                                     <Label check>109</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, '110', 'Cubículo', 'CCO4 - Planta Baja', 'cubo3')} />
                                     <Label check>110</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, '302', 'Cubículo', 'CCO4 - Segunda Planta', 'cubo4')} />
                                     <Label check>302</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO4(event, '302-A', 'Cubículo', 'CCO4 - Segunda Planta', 'cubo5')} />
                                     <Label check>302A</Label>
                                  </FormGroup>
                               </Form>
@@ -2509,29 +3066,29 @@ function App() {
                            <SubMenu label="CCO5" style={{ textAlign: 'center', fontSize: '0.8rem' }}>
                               <Form className='mt-3' style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO5(event, '101', 'Cubículo', 'CCO5 - Planta Baja', 'cubo1')} />
                                     <Label check>101</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO5(event, '102', 'Cubículo', 'CCO5 - Planta Baja', 'cubo2')} />
                                     <Label check>102</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO5(event, '103', 'Cubículo', 'CCO5 - Planta Baja', 'cubo3')} />
                                     <Label check>103</Label>
                                  </FormGroup>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO5(event, '104', 'Cubículo', 'CCO5 - Planta Baja', 'cubo4')} />
                                     <Label check>104</Label>
                                  </FormGroup>
                               </Form>
 
                               <Form style={{ textAlign: 'center' }}>
                                  <FormGroup check inline>
-                                    <Input type='checkbox' />
+                                    <Input type='checkbox' onChange={(event) => marcadorCCO5(event, '106', 'Cubículo', 'CCO5 - Planta Baja', 'cubo5')} />
                                     <Label check>106</Label>
                                  </FormGroup>
                               </Form>
@@ -2757,6 +3314,41 @@ function App() {
                         {cuboCco3_21}
                         {cuboCco3_22}
                         {cco3Punto1}
+                        {cco4Sal1}
+                        {cco4Sal2}
+                        {cco4Sal3}
+                        {cco4Sal4}
+                        {cco4Sal5}
+                        {cco4Sal6}
+                        {cco4Sal7}
+                        {cco4Sal8}
+                        {cco4Sal9}
+                        {cco4Sal10}
+                        {cco4Sal11}
+                        {cco4Sal12}
+                        {cco4Sal13}
+                        {cco4Sal14}
+                        {cco4Sal15}
+                        {cco4Sal16}
+                        {cco4Sal17}
+                        {cco4Sal18}
+                        {cuboCco4_1}
+                        {cuboCco4_2}
+                        {cuboCco4_3}
+                        {cuboCco4_4}
+                        {cuboCco4_5}
+                        {cco4Punto1}
+                        {cco4Punto2}
+                        {cco4Punto3}
+                        {cco4Punto4}
+                        {cco5Sal1}
+                        {cco5Sal2}
+                        {cco5Sal3}
+                        {cuboCco5_1}
+                        {cuboCco5_2}
+                        {cuboCco5_3}
+                        {cuboCco5_4}
+                        {cuboCco5_5}
                      </MapContainer>
                   </div>
                   {/* <Canvas
