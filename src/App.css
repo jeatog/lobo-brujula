@@ -110,6 +110,10 @@ div.sc-jSUZER.daWgIu.sub-menu-content{
   border-color: rgba(242, 242, 242, 1);
 }
 
+div.sc-dkrFOg.fpTHfu.sidebar-inner{
+  width: inherit;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
