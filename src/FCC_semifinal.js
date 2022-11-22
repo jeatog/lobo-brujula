@@ -36,272 +36,272 @@ export default function Model(props) {
       <mesh geometry={nodes.CCO3.geometry} material={(props.ids.includes('CCO3')) ? selected_material : materials.Lapizlazuli} position={[-0.38, 2.48, -1.99]} rotation={[Math.PI / 2, 0, Math.PI / 2]} scale={[0.85, 1, 0.85]} />
       <mesh geometry={nodes.CCO4.geometry} material={(props.ids.includes('CCO4')) ? selected_material : materials.Lapizlazuli} position={[0.44, 2.06, -11.17]} rotation={[Math.PI / 2, 0, Math.PI / 2]} scale={[0.85, 1, 0.85]} />
       <mesh geometry={nodes.CCO5.geometry} material={(props.ids.includes('CCO5')) ? selected_material : materials.Lapizlazuli} position={[-2.61, 1.37, -6.92]} rotation={[Math.PI / 2, 0, Math.PI / 2]} scale={[0.85, 1, 0.85]} />
-      <mesh geometry={nodes.Plane.geometry} material={(props.ids.includes()) ? selected_material : grass_material} position={[3.15, 0.09, -3.44]} scale={[9.25, 1.07, 9.93]} />
-      <mesh geometry={nodes['3C304'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C304'].material} position={[-1.02, 2.09, 1.51]} scale={[0.2, 0.33, 0.27]} />
-      <mesh geometry={nodes['3C305'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C305'].material} position={[-1.32, 2.09, 0.84]} scale={[0.2, 0.33, 0.27]} />
-      <mesh geometry={nodes['3C306'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C306'].material} position={[-1.32, 2.09, 0.13]} scale={[0.2, 0.33, 0.34]} />
-      <mesh geometry={nodes['3C307'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C307'].material} position={[-1.32, 2.09, -0.61]} scale={[0.2, 0.33, 0.32]} />
-      <mesh geometry={nodes['3C308'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C308'].material} position={[-1.03, 2.09, -1.25]} scale={[0.2, 0.33, 0.26]} />
-      <mesh geometry={nodes['3LR1_302'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3LR1_302'].material} position={[-0.25, 2.09, 1.46]} scale={[0.56, 0.33, 0.37]} />
-      <mesh geometry={nodes['3LR2_303'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3LR2_303'].material} position={[-0.25, 2.09, 0.69]} scale={[0.56, 0.33, 0.37]} />
-      <mesh geometry={nodes['3LR_301'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3LR_301'].material} position={[-0.25, 2.09, 2.24]} scale={[0.56, 0.33, 0.37]} />
-      <mesh geometry={nodes['3LH310'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3LH310'].material} position={[-0.25, 2.09, -1.95]} scale={[0.56, 0.33, 0.49]} />
-      <mesh geometry={nodes['3LH309'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3LH309'].material} position={[-0.25, 2.09, -0.55]} scale={[0.56, 0.33, 0.49]} />
-      <mesh geometry={nodes['3A310A'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3A310A'].material} position={[-0.25, 2.09, -1.25]} scale={[0.56, 0.33, 0.13]} />
-      <mesh geometry={nodes['3Ventanal1'].geometry} material={(props.ids.includes()) ? selected_material : materials.Cristal} position={[-0.74, 2.08, 0.14]} rotation={[-Math.PI, 0, -Math.PI]} scale={[0.99, 0.36, 2.13]} />
-      <mesh geometry={nodes['3Ventanal3'].geometry} material={(props.ids.includes()) ? selected_material : materials.Cristal} position={[0.38, 1.27, 0.17]} scale={[1.91, 0.39, 1.84]} />
-      <mesh geometry={nodes['3Ventanal2'].geometry} material={(props.ids.includes()) ? selected_material : materials.Cristal} position={[0.38, 1.73, 0.17]} scale={[2.03, 0.39, 2.05]} />
-      <mesh geometry={nodes['3TechoTrasero'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3TechoTrasero'].material} position={[0.5, 2.16, 0.14]} scale={[2.2, 0.18, 2.25]} />
-      <mesh geometry={nodes['3BaseTrasera'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3BaseTrasera'].material} position={[0.59, 0.97, 0.14]} scale={[1.6, 0.88, 1.95]} />
-      <mesh geometry={nodes['3Base1'].geometry} material={(props.ids.includes()) ? selected_material : materials.Piedra} position={[-0.13, 0.31, -0.68]} scale={[1, 0.27, 0.64]} />
-      <mesh geometry={nodes['3Base2'].geometry} material={(props.ids.includes()) ? selected_material : materials.Piedra} position={[-0.13, 0.31, 1.06]} rotation={[Math.PI, -0.01, Math.PI]} scale={[1, 0.27, 0.64]} />
-      <mesh geometry={nodes['3Base3'].geometry} material={(props.ids.includes()) ? selected_material : materials.Piedra} position={[1.88, 0.31, 1.6]} rotation={[Math.PI, -0.01, Math.PI]} scale={[0.61, 0.27, 0.84]} />
-      <mesh geometry={nodes['3Base4'].geometry} material={(props.ids.includes()) ? selected_material : materials.Piedra} position={[1.88, 0.31, -1.42]} scale={[0.61, 0.27, 0.84]} />
-      <mesh geometry={nodes['3Balcon'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3Balcon'].material} position={[1.97, 0.66, 0.14]} rotation={[0, 0.02, 0]} scale={[0.65, 0.07, 0.87]} />
-      <mesh geometry={nodes['3LabSuperiores'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3LabSuperiores'].material} position={[-0.13, 2.11, 0.09]} scale={[1.05, 0.37, 2.55]} />
-      <mesh geometry={nodes['3Pilar'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3Pilar'].material} position={[-0.98, 0.91, 2.49]} scale={[-0.07, 0.88, 0.07]} />
-      <mesh geometry={nodes['3Pilar001'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3Pilar001'].material} position={[-0.98, 0.91, -2.37]} scale={[-0.07, 0.88, 0.07]} />
-      <mesh geometry={nodes['3Pilar002'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3Pilar002'].material} position={[-1.08, 1.17, 1.62]} scale={[-0.07, 0.62, 0.07]} />
-      <mesh geometry={nodes['3Pilar003'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3Pilar003'].material} position={[-1.08, 1.17, -1.27]} scale={[-0.07, 0.62, 0.07]} />
-      <mesh geometry={nodes['3Pilar004'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3Pilar004'].material} position={[0.82, 0.91, -2.37]} scale={[-0.07, 0.88, 0.07]} />
-      <mesh geometry={nodes['3Pilar005'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3Pilar005'].material} position={[0.7, 0.91, 2.49]} scale={[-0.07, 0.88, 0.07]} />
-      <mesh geometry={nodes['3B200'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3B200'].material} position={[0.62, 1.31, 1.24]} scale={[0.27, 0.27, 0.62]} />
-      <mesh geometry={nodes['3B200A'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3B200A'].material} position={[-0.02, 1.31, 1.15]} scale={[0.27, 0.27, 0.62]} />
-      <mesh geometry={nodes['3Biblioteca_202'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3Biblioteca_202'].material} position={[-0.61, 1.43, 0.14]} rotation={[-Math.PI, -0.01, -Math.PI]} scale={[0.87, 0.26, 1.17]} />
-      <mesh geometry={nodes['3C203'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C203'].material} position={[-0.3, 1.31, -1.13]} scale={[0.28, 0.27, 0.23]} />
-      <mesh geometry={nodes['3C206'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C206'].material} position={[-0.07, 1.3, -0.45]} scale={[0.17, 0.27, 0.16]} />
-      <mesh geometry={nodes['3C206B'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C206B'].material} position={[0.3, 1.3, -0.45]} scale={[0.17, 0.27, 0.16]} />
-      <mesh geometry={nodes['3C207'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C207'].material} position={[0.74, 1.3, -0.45]} scale={[0.24, 0.27, 0.16]} />
-      <mesh geometry={nodes['3LSR_205'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3LSR_205'].material} position={[0.95, 1.31, -1.06]} scale={[0.27, 0.27, 0.42]} />
-      <mesh geometry={nodes['3LTI201'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3LTI201'].material} position={[1.16, 1.31, 1.49]} scale={[0.18, 0.27, 0.19]} />
-      <mesh geometry={nodes['3LTS_204'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3LTS_204'].material} position={[0.35, 1.31, -1.13]} scale={[0.27, 0.27, 0.23]} />
-      <mesh geometry={nodes['3S208'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3S208'].material} position={[1.91, 1.31, -1.44]} scale={[0.63, 0.27, 0.84]} />
-      <mesh geometry={nodes['3LC101'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3LC101'].material} position={[-0.13, 0.85, -0.68]} scale={[1, 0.27, 0.64]} />
-      <mesh geometry={nodes['3LC104'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3LC104'].material} position={[1.91, 0.8, -1.44]} scale={[0.63, 0.27, 0.84]} />
-      <mesh geometry={nodes['3LC109'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3LC109'].material} position={[1.91, 0.95, 1.62]} scale={[0.63, 0.39, 0.84]} />
-      <mesh geometry={nodes['3LC114'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3LC114'].material} position={[-0.13, 0.85, 1.05]} scale={[1, 0.27, 0.64]} />
-      <mesh geometry={nodes['3C106'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C106'].material} position={[1.93, 0.8, -0.34]} scale={[0.15, 0.19, 0.21]} />
-      <mesh geometry={nodes['3C107'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C107'].material} position={[1.92, 0.8, 0.33]} scale={[0.15, 0.19, 0.21]} />
-      <mesh geometry={nodes['3C105'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C105'].material} position={[1.58, 0.8, -0.41]} scale={[0.15, 0.19, 0.15]} />
-      <mesh geometry={nodes['3C108'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C108'].material} position={[1.58, 0.8, 0.4]} scale={[0.15, 0.19, 0.15]} />
-      <mesh geometry={nodes['3CSIC002'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3CSIC002'].material} position={[1.91, 0.28, -0.09]} scale={[0.15, 0.19, 0.43]} />
-      <mesh geometry={nodes['3CSIC003'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3CSIC003'].material} position={[1.56, 0.28, -0.09]} scale={[0.15, 0.19, 0.43]} />
-      <mesh geometry={nodes['3C006'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C006'].material} position={[0, 0.29, -0.91]} scale={[0.15, 0.19, 0.23]} />
-      <mesh geometry={nodes['3C007'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C007'].material} position={[-0.07, 0.29, -0.33]} scale={[0.09, 0.19, 0.15]} />
-      <mesh geometry={nodes['3C007A'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C007A'].material} position={[0.12, 0.29, -0.33]} scale={[0.09, 0.19, 0.15]} />
-      <mesh geometry={nodes['3C008'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C008'].material} position={[0.47, 0.29, -0.33]} scale={[0.12, 0.19, 0.15]} />
-      <mesh geometry={nodes['3C009'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C009'].material} position={[0.75, 0.29, -0.33]} scale={[0.12, 0.19, 0.15]} />
-      <mesh geometry={nodes['3C010'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C010'].material} position={[1.03, 0.29, -0.34]} scale={[0.12, 0.19, 0.15]} />
-      <mesh geometry={nodes['3C011'].geometry} material={(props.ids.includes()) ? selected_material : nodes['3C011'].material} position={[1.29, 0.29, -0.21]} scale={[0.11, 0.19, 0.27]} />
-      <mesh geometry={nodes['4S101'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S101'].material} position={[0.34, 0.27, -4.59]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['4S102'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S102'].material} position={[0.34, 0.27, -5.61]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['4S103'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S103'].material} position={[0.34, 0.27, -6.64]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['4S104'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S104'].material} position={[0.34, 0.27, -7.67]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['4Soteguela1'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Soteguela1'].material} position={[0.58, 0.59, -6.12]} scale={[0.54, 0.03, 2.07]} />
-      <mesh geometry={nodes['4Soteguela1B'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Soteguela1B'].material} position={[2.03, 0.2, -9.71]} scale={[0.9, 0.03, 0.77]} />
-      <mesh geometry={nodes['4S201'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S201'].material} position={[0.34, 0.86, -4.59]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['4S202'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S202'].material} position={[0.34, 0.86, -5.6]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['4S203'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S203'].material} position={[0.34, 0.86, -6.63]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['4S204'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S204'].material} position={[0.34, 0.86, -7.67]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['4Soteguela2'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Soteguela2'].material} position={[0.58, 1.09, -6.12]} scale={[0.54, 0.04, 2.07]} />
-      <mesh geometry={nodes['4AS_208'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4AS_208'].material} position={[1.79, 0.44, -9.97]} scale={[0.31, 0.19, 0.57]} />
-      <mesh geometry={nodes['4DIR_211B'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4DIR_211B'].material} position={[3.39, 0.44, -9.9]} scale={[0.47, 0.19, 0.61]} />
-      <mesh geometry={nodes['4ARCHIVO_210'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4ARCHIVO_210'].material} position={[2.29, 0.44, -9.96]} scale={[0.16, 0.19, 0.55]} />
-      <mesh geometry={nodes['4B200B'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4B200B'].material} position={[-0.08, 0.46, -8.62]} scale={[0.48, 0.21, 0.24]} />
-      <mesh geometry={nodes['4SS_PP_205'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4SS_PP_205'].material} position={[-0.08, 0.46, -9.18]} scale={[0.48, 0.21, 0.24]} />
-      <mesh geometry={nodes['4iLAB_206'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4iLAB_206'].material} position={[-1.16, 0.46, -9.78]} scale={[0.39, 0.21, 0.57]} />
-      <mesh geometry={nodes['4Soteguela2B'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Soteguela2B'].material} position={[2.03, 0.66, -9.71]} scale={[0.9, 0.03, 0.77]} />
-      <mesh geometry={nodes['4S301'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S301'].material} position={[0.34, 1.38, -4.59]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['4S303'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S303'].material} position={[0.34, 1.38, -5.6]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['4S304'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S304'].material} position={[0.34, 1.38, -6.63]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['4S305'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S305'].material} position={[0.34, 1.38, -7.67]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['4Soteguela3'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Soteguela3'].material} position={[0.58, 1.71, -6.12]} scale={[0.54, 0.08, 2.07]} />
-      <mesh geometry={nodes['4B200'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4B200'].material} position={[-0.08, 1, -8.63]} scale={[0.48, 0.21, 0.24]} />
-      <mesh geometry={nodes['4LABCERT_306'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4LABCERT_306'].material} position={[-1.16, 1.02, -9.78]} scale={[0.39, 0.21, 0.57]} />
-      <mesh geometry={nodes['4S308'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S308'].material} position={[3.4, 0.93, -9.71]} scale={[0.48, 0.29, 0.76]} />
-      <mesh geometry={nodes['4S307'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S307'].material} position={[1.96, 0.93, -9.95]} scale={[0.48, 0.22, 0.54]} />
-      <mesh geometry={nodes['4Soteguela3B'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Soteguela3B'].material} position={[2.03, 1.19, -9.71]} scale={[0.9, 0.03, 0.77]} />
-      <mesh geometry={nodes['4C302A'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4C302A'].material} position={[0.53, 1.38, -5.23]} scale={[0.11, 0.24, 0.12]} />
-      <mesh geometry={nodes['4C302'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4C302'].material} position={[0.53, 1.38, -5.48]} scale={[0.11, 0.24, 0.1]} />
-      <mesh geometry={nodes['4Barda'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Barda'].material} position={[1.17, 0.9, -8.44]} scale={[-0.06, 0.89, 0.33]} />
-      <mesh geometry={nodes['4Barda2'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Barda2'].material} position={[1.49, 0.9, -8.86]} rotation={[0, Math.PI / 2, 0]} scale={[-0.06, 0.89, 0.33]} />
-      <mesh geometry={nodes['4Barda3'].geometry} material={(props.ids.includes()) ? selected_material : materials.Piedra} position={[2.85, 0.14, -8.86]} rotation={[0, Math.PI / 2, 0]} scale={[-0.06, 0.19, 1.02]} />
-      <mesh geometry={nodes['4Murales'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Murales'].material} position={[0.18, 1.06, -9.76]} scale={[0.89, 1, 1.57]} />
-      <mesh geometry={nodes['4Columna'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Columna'].material} position={[-0.67, 1.02, -11.43]} scale={[-0.04, 0.97, -0.09]} />
-      <mesh geometry={nodes['4Columna2'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Columna2'].material} position={[1.02, 1.02, -11.43]} scale={[-0.04, 0.97, -0.09]} />
-      <mesh geometry={nodes['4Corniza'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Corniza'].material} position={[0.18, 1.98, -11.42]} scale={[0.89, 0.09, -0.08]} />
-      <mesh geometry={nodes['4MuralesVentana'].geometry} material={(props.ids.includes()) ? selected_material : materials.Cristal} position={[0.18, 1.06, -11.35]} scale={[0.84, 0.84, -0.05]} />
-      <mesh geometry={nodes['4Barda4'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Barda4'].material} position={[2.5, 0.88, -10.53]} scale={[1.37, 0.92, -0.05]} />
-      <mesh geometry={nodes['4MiniVentana'].geometry} material={(props.ids.includes()) ? selected_material : red_material} position={[2.55, 1.54, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
-      <mesh geometry={nodes['4MiniVentana1'].geometry} material={(props.ids.includes()) ? selected_material : red_material} position={[2.09, 1.54, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
-      <mesh geometry={nodes['4MiniVentana2'].geometry} material={(props.ids.includes()) ? selected_material : red_material} position={[1.6, 1.54, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
-      <mesh geometry={nodes['4MiniVentana3'].geometry} material={(props.ids.includes()) ? selected_material : red_material} position={[2.55, 1.08, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
-      <mesh geometry={nodes['4MiniVentana4'].geometry} material={(props.ids.includes()) ? selected_material : red_material} position={[2.06, 1.07, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
-      <mesh geometry={nodes['4MiniVentana5'].geometry} material={(props.ids.includes()) ? selected_material : red_material} position={[1.57, 1.08, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
-      <mesh geometry={nodes['4MiniVentana6'].geometry} material={(props.ids.includes()) ? selected_material : red_material} position={[2.55, 0.54, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
-      <mesh geometry={nodes['4MiniVentana7'].geometry} material={(props.ids.includes()) ? selected_material : red_material} position={[2.06, 0.52, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
-      <mesh geometry={nodes['4MiniVentana8'].geometry} material={(props.ids.includes()) ? selected_material : red_material} position={[1.57, 0.49, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
-      <mesh geometry={nodes['4Entrada'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Entrada'].material} position={[0.2, 0.31, -11.54]} rotation={[Math.PI / 2, 0, 0]} scale={[0.21, 0.11, 0.35]} />
-      <mesh geometry={nodes['4Escalon'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Escalon'].material} position={[0.18, 0.09, -11.42]} scale={[0.89, 0.09, -0.08]} />
-      <mesh geometry={nodes['4Ala_Sur'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Ala_Sur'].material} position={[-1.18, 1.06, -9.76]} scale={[0.44, 1, 0.6]} />
-      <mesh geometry={nodes['4Sventanas3'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[0.68, 1.5, -6.11]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.03]} />
-      <mesh geometry={nodes['4Sventanas2'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[0.68, 0.89, -6.11]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.03]} />
-      <mesh geometry={nodes['4Sventanas1'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[0.68, 0.4, -6.11]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.03]} />
-      <mesh geometry={nodes['4Sventanas1T'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[0.01, 0.4, -6.11]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.03]} />
-      <mesh geometry={nodes['4Sventanas2T'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[0.01, 0.99, -6.11]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.03]} />
-      <mesh geometry={nodes['4Sventanas3T'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[0.01, 1.48, -6.11]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.03]} />
-      <mesh geometry={nodes['4C_108_110'].geometry} material={(props.ids.includes()) ? selected_material : materials.Piedra} position={[2.66, 0.12, -9.86]} rotation={[0, Math.PI / 2, 0]} scale={[-0.55, 0.14, 1.24]} />
-      <mesh geometry={nodes['4S404'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S404'].material} position={[3.4, 1.5, -9.71]} scale={[0.48, 0.29, 0.77]} />
-      <mesh geometry={nodes['4S403'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S403'].material} position={[1.96, 1.51, -9.95]} scale={[0.48, 0.22, 0.54]} />
-      <mesh geometry={nodes['4S401'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S401'].material} position={[-0.08, 1.51, -8.63]} scale={[0.48, 0.21, 0.24]} />
-      <mesh geometry={nodes['4S402'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4S402'].material} position={[-1.16, 1.53, -9.78]} scale={[0.39, 0.21, 0.57]} />
-      <mesh geometry={nodes['4Soteguela4B'].geometry} material={(props.ids.includes()) ? selected_material : nodes['4Soteguela4B'].material} position={[2.03, 1.78, -9.71]} scale={[0.9, 0.03, 0.77]} />
-      <mesh geometry={nodes['4SventanasL1'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[-1.64, 1.83, -10.09]} rotation={[0, 0, -Math.PI / 2]} scale={[0.15, 1, 0.17]} />
-      <mesh geometry={nodes['4SventanasL2'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[-1.64, 1.83, -9.52]} rotation={[0, 0, -Math.PI / 2]} scale={[0.15, 1, 0.17]} />
-      <mesh geometry={nodes['4SventanasL3'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[-1.64, 1.22, -10.09]} rotation={[0, 0, -Math.PI / 2]} scale={[0.15, 1, 0.17]} />
-      <mesh geometry={nodes['4SventanasL4'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[-1.64, 1.22, -9.52]} rotation={[0, 0, -Math.PI / 2]} scale={[0.15, 1, 0.17]} />
-      <mesh geometry={nodes['4SventanasL5'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[-1.64, 0.61, -10.09]} rotation={[0, 0, -Math.PI / 2]} scale={[0.15, 1, 0.17]} />
-      <mesh geometry={nodes['4SventanasL6'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[-1.64, 0.62, -9.53]} rotation={[0, 0, -Math.PI / 2]} scale={[0.15, 1, 0.17]} />
-      <mesh geometry={nodes['4SVentanasF1'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[3.28, 1.53, -10.59]} rotation={[-Math.PI / 2, 1.57, 0]} scale={[0.15, 1, 0.25]} />
-      <mesh geometry={nodes['4SventanasF2'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[3.28, 1.07, -10.59]} rotation={[-Math.PI / 2, 1.57, 0]} scale={[0.15, 1, 0.25]} />
-      <mesh geometry={nodes['4SventanasF3'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[3.28, 0.53, -10.59]} rotation={[-Math.PI / 2, 1.57, 0]} scale={[0.15, 1, 0.25]} />
-      <mesh geometry={nodes['4SVentanasF3R'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[3.4, 1.53, -8.93]} rotation={[-Math.PI / 2, 1.57, 0]} scale={[0.15, 1, 0.25]} />
-      <mesh geometry={nodes['4SVentanasF2R'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[3.4, 0.97, -8.93]} rotation={[-Math.PI / 2, 1.57, 0]} scale={[0.15, 1, 0.25]} />
-      <mesh geometry={nodes['2AUDITORIO_102'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2AUDITORIO_102'].material} position={[4.77, 0.27, 1.88]} scale={[0.33, 0.24, 0.82]} />
-      <mesh geometry={nodes['2B100'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2B100'].material} position={[4.77, 0.27, -2.65]} scale={[0.33, 0.24, 0.25]} />
-      <mesh geometry={nodes['2B100B'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2B100B'].material} position={[4.77, 0.27, -2.13]} scale={[0.33, 0.24, 0.25]} />
-      <mesh geometry={nodes['2C103_108'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2C103_108'].material} position={[4.77, 0.27, 0.53]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['2C109_114'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2C109_114'].material} position={[4.77, 0.27, -0.51]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['2COMEDOR_100'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2COMEDOR_100'].material} position={[4.77, 0.27, 2.9]} scale={[0.33, 0.24, 0.16]} />
-      <mesh geometry={nodes['2C209'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2C209'].material} position={[5, 0.86, -2.56]} scale={[0.52, 0.24, 0.34]} />
-      <mesh geometry={nodes['2LARQ_206'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2LARQ_206'].material} position={[4.77, 0.86, 0.54]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['2LASR_203'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2LASR_203'].material} position={[4.77, 0.86, 1.92]} scale={[0.33, 0.24, 0.12]} />
-      <mesh geometry={nodes['2LAZTLI_204'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2LAZTLI_204'].material} position={[4.77, 0.86, 1.55]} scale={[0.33, 0.24, 0.23]} />
-      <mesh geometry={nodes['2LBD_207'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2LBD_207'].material} position={[4.77, 0.86, -0.5]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['2LEC_208'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2LEC_208'].material} position={[4.71, 0.86, -2.22]} scale={[0.23, 0.24, 0.33]} />
-      <mesh geometry={nodes['2LSL_205'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2LSL_205'].material} position={[4.77, 0.86, 1.18]} scale={[0.33, 0.24, 0.12]} />
-      <mesh geometry={nodes['2LMM_201_202'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2LMM_201_202'].material} position={[4.77, 0.86, 2.58]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['2C_301'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2C_301'].material} position={[5.32, 1.43, 2.78]} scale={[0.2, 0.24, 0.3]} />
-      <mesh geometry={nodes['2C_305_311'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2C_305_311'].material} position={[5, 1.43, -2.39]} scale={[0.52, 0.24, 0.51]} />
-      <mesh geometry={nodes['2C_305A_305B'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2C_305A_305B'].material} position={[4.77, 1.43, -0.5]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['2LDT_304'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2LDT_304'].material} position={[4.77, 1.43, 1.42]} scale={[0.33, 0.24, 0.21]} />
-      <mesh geometry={nodes['2LRM_302'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2LRM_302'].material} position={[4.77, 1.43, 2.58]} scale={[0.33, 0.24, 0.51]} />
-      <mesh geometry={nodes['2MiLAB_303'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2MiLAB_303'].material} position={[4.77, 1.43, 1.85]} scale={[0.33, 0.24, 0.21]} />
-      <mesh geometry={nodes['2SLISTER_305'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2SLISTER_305'].material} position={[4.77, 1.43, 0.61]} scale={[0.33, 0.24, 0.58]} />
-      <mesh geometry={nodes['2Soteguela1'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2Soteguela1'].material} position={[5, 0.57, 0.08]} scale={[0.54, 0.03, 3.01]} />
-      <mesh geometry={nodes['2Soteguela2'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2Soteguela2'].material} position={[5, 1.14, 0.09]} scale={[0.54, 0.04, 3.01]} />
-      <mesh geometry={nodes['2Soteguela3'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2Soteguela3'].material} position={[5, 1.77, 0.09]} scale={[0.54, 0.08, 3]} />
-      <mesh geometry={nodes['2LATERAL1'].geometry} material={(props.ids.includes()) ? selected_material : materials.Brick} position={[4.77, 0.94, -2.97]} scale={[0.33, 0.9, 0.04]} />
-      <mesh geometry={nodes['2LATERAL2'].geometry} material={(props.ids.includes()) ? selected_material : materials.Brick} position={[4.77, 0.94, 3.15]} scale={[0.33, 0.9, 0.04]} />
-      <mesh geometry={nodes['2Sventanas3F'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[5.11, 1.53, 0.72]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 1.73]} />
-      <mesh geometry={nodes['2Sventanas2F'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[5.11, 0.95, 1.06]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.05]} />
-      <mesh geometry={nodes['2Sventanas1F'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[5.11, 0.4, 1.06]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.05]} />
-      <mesh geometry={nodes['2Sventanas1FR'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[4.4, 0.4, 1.06]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.05]} />
-      <mesh geometry={nodes['2Sventanas2FR'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[4.4, 0.93, 1.06]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.05]} />
-      <mesh geometry={nodes['2Sventanas3FR'].geometry} material={(props.ids.includes()) ? selected_material : materials.Cristal} position={[4.4, 1.49, 1.06]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.05]} />
-      <mesh geometry={nodes['1SALACUBICULOS'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1SALACUBICULOS'].material} position={[8.74, 0.27, 2.34]} scale={[0.7, 0.24, 2.34]} />
-      <mesh geometry={nodes['1AUTOACCESO_102'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1AUTOACCESO_102'].material} position={[8.74, 0.29, 0.37]} scale={[0.58, 0.21, 0.24]} />
-      <mesh geometry={nodes['1C_103'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_103'].material} position={[9.19, 0.29, 0.84]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_104'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_104'].material} position={[9.19, 0.29, 1.11]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_105'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_105'].material} position={[9.19, 0.29, 1.39]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_106'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_106'].material} position={[9.19, 0.29, 1.67]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_107'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_107'].material} position={[9.19, 0.29, 1.97]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_108'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_108'].material} position={[9.19, 0.29, 2.25]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_109'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_109'].material} position={[9.19, 0.29, 2.53]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_110'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_110'].material} position={[9.19, 0.29, 2.81]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_111'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_111'].material} position={[9.19, 0.29, 3.1]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_112'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_112'].material} position={[9.19, 0.29, 3.39]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_113'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_113'].material} position={[9.19, 0.29, 3.69]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_114'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_114'].material} position={[9.19, 0.29, 3.98]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_125'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_125'].material} position={[8.26, 0.29, 1.11]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_124'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_124'].material} position={[8.26, 0.29, 1.39]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_123'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_123'].material} position={[8.26, 0.29, 1.67]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_122'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_122'].material} position={[8.26, 0.29, 1.97]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_121'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_121'].material} position={[8.26, 0.29, 2.25]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_120'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_120'].material} position={[8.26, 0.29, 2.53]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_119'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_119'].material} position={[8.26, 0.29, 2.81]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_118'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_118'].material} position={[8.26, 0.29, 3.1]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_117'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_117'].material} position={[8.26, 0.29, 3.39]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_116'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_116'].material} position={[8.26, 0.29, 3.69]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1C_115'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1C_115'].material} position={[8.26, 0.29, 3.98]} scale={[0.17, 0.21, 0.13]} />
-      <mesh geometry={nodes['1RACK_100B'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1RACK_100B'].material} position={[8.74, 0.29, 4.39]} scale={[0.58, 0.21, 0.24]} />
-      <mesh geometry={nodes['1UM_101'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1UM_101'].material} position={[8.74, 0.27, -0.34]} scale={[0.7, 0.24, 0.35]} />
-      <mesh geometry={nodes['1SOTEGUELA1'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1SOTEGUELA1'].material} position={[8.47, 0.62, 1.67]} scale={[0.97, 0.07, 3.01]} />
-      <mesh geometry={nodes['1POSGRADO'].geometry} material={(props.ids.includes()) ? selected_material : materials.Cristal} position={[8.47, 0.92, 1.67]} scale={[0.97, 0.2, 3.01]} />
-      <mesh geometry={nodes['1SOTEGUELA1001'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1SOTEGUELA1001'].material} position={[8.47, 1.21, 1.67]} scale={[0.97, 0.07, 3.01]} />
-      <mesh geometry={nodes['1LATERAL2'].geometry} material={(props.ids.includes()) ? selected_material : materials.Brick} position={[8.74, 0.66, 4.73]} scale={[0.69, 0.63, 0.04]} />
-      <mesh geometry={nodes['1LATERAL2001'].geometry} material={(props.ids.includes()) ? selected_material : materials.Brick} position={[8.74, 0.66, -1.39]} scale={[0.69, 0.63, 0.04]} />
-      <mesh geometry={nodes['1SUBTERRANEO'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1SUBTERRANEO'].material} position={[8.47, -0.14, 1.67]} scale={[0.97, 0.2, 3.01]} />
-      <mesh geometry={nodes['1S_001'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1S_001'].material} position={[8.8, -0.15, -0.17]} scale={[0.58, 0.17, 0.51]} />
-      <mesh geometry={nodes['1S_002'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1S_002'].material} position={[8.8, -0.15, 0.92]} scale={[0.58, 0.17, 0.56]} />
-      <mesh geometry={nodes['1S_003'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1S_003'].material} position={[8.8, -0.15, 2.07]} scale={[0.58, 0.17, 0.53]} />
-      <mesh geometry={nodes['1S_004'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1S_004'].material} position={[8.8, -0.15, 3.15]} scale={[0.58, 0.17, 0.5]} />
-      <mesh geometry={nodes['1S_005'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1S_005'].material} position={[8.8, -0.15, 4.17]} scale={[0.58, 0.17, 0.48]} />
-      <mesh geometry={nodes['1BTOC_006'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1BTOC_006'].material} position={[7.86, -0.15, 4.41]} scale={[0.31, 0.17, 0.23]} />
-      <mesh geometry={nodes['1UM_101001'].geometry} material={(props.ids.includes()) ? selected_material : nodes['1UM_101001'].material} position={[9.37, 0.27, -1.03]} scale={[0.08, 0.24, 0.31]} />
-      <mesh geometry={nodes['5C106'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5C106'].material} position={[-2.67, 0.27, -6.37]} scale={[0.13, 0.22, 0.18]} />
-      <mesh geometry={nodes['5CUBOS'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5CUBOS'].material} position={[-3.05, 0.27, -5.86]} scale={[0.53, 0.24, 0.71]} />
-      <mesh geometry={nodes['5LRV_107'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5LRV_107'].material} position={[-3.07, 0.27, -6.98]} scale={[0.53, 0.24, 0.37]} />
-      <mesh geometry={nodes['5S201'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5S201'].material} position={[-3.05, 0.86, -4.79]} scale={[0.54, 0.24, 0.51]} />
-      <mesh geometry={nodes['5S202'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5S202'].material} position={[-3.05, 0.86, -5.81]} scale={[0.53, 0.24, 0.51]} />
-      <mesh geometry={nodes['5S203'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5S203'].material} position={[-3.05, 0.86, -6.85]} scale={[0.53, 0.24, 0.51]} />
-      <mesh geometry={nodes['5Soteguela1'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5Soteguela1'].material} position={[-2.86, 0.57, -5.81]} scale={[0.75, 0.03, 1.6]} />
-      <mesh geometry={nodes['5Soteguela2'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5Soteguela2'].material} position={[-2.85, 1.2, -5.8]} scale={[0.77, 0.07, 1.6]} />
-      <mesh geometry={nodes['5B100'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5B100'].material} position={[-3.07, 0.27, -4.45]} scale={[0.53, 0.24, 0.16]} />
-      <mesh geometry={nodes['5C101'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5C101'].material} position={[-2.67, 0.27, -5.76]} scale={[0.13, 0.22, 0.18]} />
-      <mesh geometry={nodes['5C101B'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5C101B'].material} position={[-2.96, 0.27, -5.76]} scale={[0.13, 0.22, 0.18]} />
-      <mesh geometry={nodes['5C104'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5C104'].material} position={[-3.37, 0.27, -5.76]} scale={[0.13, 0.22, 0.18]} />
-      <mesh geometry={nodes['5C103001'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5C103001'].material} position={[-3.37, 0.27, -6.14]} scale={[0.13, 0.22, 0.18]} />
-      <mesh geometry={nodes['5C103'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5C103'].material} position={[-3.21, 0.27, -5.37]} scale={[0.28, 0.22, 0.16]} />
-      <mesh geometry={nodes['5B100A'].geometry} material={(props.ids.includes()) ? selected_material : nodes['5B100A'].material} position={[-3.07, 0.27, -4.89]} scale={[0.53, 0.24, 0.24]} />
-      <mesh geometry={nodes['5FACHADA1'].geometry} material={(props.ids.includes()) ? selected_material : materials.Lapizlazuli} position={[-3.62, 1.07, -4.76]} scale={[0.03, 0.23, 0.55]} />
-      <mesh geometry={nodes['5FACHADA2'].geometry} material={(props.ids.includes()) ? selected_material : materials.Lapizlazuli} position={[-3.62, 0.44, -5.26]} scale={[0.03, 0.4, 0.05]} />
-      <mesh geometry={nodes['5FACHADA3'].geometry} material={(props.ids.includes()) ? selected_material : materials.Lapizlazuli} position={[-3.62, 0.44, -4.26]} scale={[0.03, 0.4, 0.05]} />
-      <mesh geometry={nodes['5FACHADA4'].geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[-3.62, 0.73, -4.76]} scale={[0.03, 0.05, 0.45]} />
-      <mesh geometry={nodes['5FACHADA5'].geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[-3.62, 0.58, -4.76]} scale={[0.03, 0.05, 0.45]} />
-      <mesh geometry={nodes['5FACHADA6'].geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[-3.62, 0.42, -4.76]} scale={[0.03, 0.05, 0.45]} />
-      <mesh geometry={nodes['5FACHADA7'].geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[-3.62, 0.26, -4.76]} scale={[0.03, 0.05, 0.45]} />
-      <mesh geometry={nodes['5FACHADA8'].geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[-3.62, 0.13, -4.76]} scale={[0.03, 0.05, 0.45]} />
-      <mesh geometry={nodes['5ESCALERAS'].geometry} material={(props.ids.includes()) ? selected_material : materials.Lapizlazuli} position={[-3.05, 0.86, -7.73]} scale={[0.34, 0.81, 0.33]} />
-      <mesh geometry={nodes['5Sventanas1T'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[-3.5, 0.4, -6.33]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 1.02]} />
-      <mesh geometry={nodes['5Sventanas2T'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[-3.5, 0.99, -6.33]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 1.02]} />
-      <mesh geometry={nodes['5Sventanas2'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[-2.51, 0.99, -5.82]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 1.5]} />
-      <mesh geometry={nodes['5Sventanas1'].geometry} material={(props.ids.includes()) ? selected_material : nglass_material} position={[-2.51, 0.4, -5.82]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 1.5]} />
-      <mesh geometry={nodes.Mesa.geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[3.82, 0.2, -4.85]} scale={[0.26, -0.01, 0.26]} />
-      <mesh geometry={nodes.Base_Mesa.geometry} material={(props.ids.includes()) ? selected_material : nodes.Base_Mesa.material} position={[3.78, 0.14, -4.85]} scale={[0.08, -0.05, 0.08]} />
-      <mesh geometry={nodes.Sombrilla.geometry} material={(props.ids.includes()) ? selected_material : red_material} position={[3.8, 0.51, -4.85]} scale={[0.24, 0.06, 0.24]} />
-      <mesh geometry={nodes.Base_Mesa001.geometry} material={(props.ids.includes()) ? selected_material : nodes.Base_Mesa001.material} position={[3.8, 0.14, -5.63]} scale={[0.08, -0.05, 0.08]} />
-      <mesh geometry={nodes.Mesa001.geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[3.84, 0.2, -5.63]} scale={[0.26, -0.01, 0.26]} />
-      <mesh geometry={nodes.Sombrilla001.geometry} material={(props.ids.includes()) ? selected_material : red_material} position={[3.82, 0.51, -5.62]} scale={[0.24, 0.06, 0.24]} />
-      <mesh geometry={nodes.Base_Mesa002.geometry} material={(props.ids.includes()) ? selected_material : nodes.Base_Mesa002.material} position={[4.73, 0.14, -5.36]} scale={[0.08, -0.05, 0.08]} />
-      <mesh geometry={nodes.Mesa002.geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[4.77, 0.2, -5.36]} scale={[0.26, -0.01, 0.26]} />
-      <mesh geometry={nodes.Sombrilla002.geometry} material={(props.ids.includes()) ? selected_material : red_material} position={[4.75, 0.51, -5.36]} scale={[0.24, 0.06, 0.24]} />
-      <mesh geometry={nodes.Base_Mesa003.geometry} material={(props.ids.includes()) ? selected_material : nodes.Base_Mesa003.material} position={[10.73, 0.14, 2.33]} scale={[0.08, -0.05, 0.08]} />
-      <mesh geometry={nodes.Mesa003.geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[10.77, 0.2, 2.33]} scale={[0.26, -0.01, 0.26]} />
-      <mesh geometry={nodes.Sombrilla003.geometry} material={(props.ids.includes()) ? selected_material : materials.Lapizlazuli} position={[10.75, 0.51, 2.33]} scale={[0.24, 0.06, 0.24]} />
-      <mesh geometry={nodes.Base_Mesa004.geometry} material={(props.ids.includes()) ? selected_material : nodes.Base_Mesa004.material} position={[10.73, 0.14, 3.68]} scale={[0.08, -0.05, 0.08]} />
-      <mesh geometry={nodes.Mesa004.geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[10.77, 0.2, 3.68]} scale={[0.26, -0.01, 0.26]} />
-      <mesh geometry={nodes.Sombrilla004.geometry} material={(props.ids.includes()) ? selected_material : materials.Lapizlazuli} position={[10.75, 0.51, 3.69]} scale={[0.24, 0.06, 0.24]} />
-      <mesh geometry={nodes.Base_Mesa005.geometry} material={(props.ids.includes()) ? selected_material : nodes.Base_Mesa005.material} position={[10.73, 0.14, 5.14]} scale={[0.08, -0.05, 0.08]} />
-      <mesh geometry={nodes.Mesa005.geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[10.77, 0.2, 5.14]} scale={[0.26, -0.01, 0.26]} />
-      <mesh geometry={nodes.Sombrilla005.geometry} material={(props.ids.includes()) ? selected_material : materials.Lapizlazuli} position={[10.75, 0.51, 5.15]} scale={[0.24, 0.06, 0.24]} />
-      <mesh geometry={nodes.Base_Mesa006.geometry} material={(props.ids.includes()) ? selected_material : nodes.Base_Mesa006.material} position={[9.05, 0.14, 5.4]} scale={[0.08, -0.05, 0.08]} />
-      <mesh geometry={nodes.Mesa006.geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[9.09, 0.2, 5.4]} scale={[0.26, -0.01, 0.26]} />
-      <mesh geometry={nodes.Sombrilla006.geometry} material={(props.ids.includes()) ? selected_material : materials.Lapizlazuli} position={[9.07, 0.51, 5.41]} scale={[0.24, 0.06, 0.24]} />
-      <mesh geometry={nodes.Bebedero1.geometry} material={(props.ids.includes()) ? selected_material : nodes.Bebedero1.material} position={[8.5, 0.32, -6.83]} scale={[0.16, -0.26, 0.16]} />
-      <mesh geometry={nodes.Bebedero2.geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[8.49, 0.59, -6.83]} scale={[0.26, -0.01, 0.26]} />
-      <mesh geometry={nodes.Caseta.geometry} material={(props.ids.includes()) ? selected_material : materials.Lapizlazuli} position={[11.53, 0.42, -2.16]} scale={[0.43, 0.27, 0.74]} />
-      <mesh geometry={nodes['2AUDITORIO_102001'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2AUDITORIO_102001'].material} position={[2.92, 0.27, 5.05]} scale={[0.21, 0.24, 0.35]} />
-      <mesh geometry={nodes['2Soteguela1001'].geometry} material={(props.ids.includes()) ? selected_material : nodes['2Soteguela1001'].material} position={[2.61, 0.54, 5.05]} scale={[0.54, 0.02, 0.37]} />
-      <mesh geometry={nodes.Base_Mesa007.geometry} material={(props.ids.includes()) ? selected_material : nodes.Base_Mesa007.material} position={[1.37, 0.14, 5.07]} scale={[0.08, -0.05, 0.08]} />
-      <mesh geometry={nodes.Mesa007.geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[1.41, 0.2, 5.07]} scale={[0.26, -0.01, 0.26]} />
-      <mesh geometry={nodes.Sombrilla007.geometry} material={(props.ids.includes()) ? selected_material : materials.Lapizlazuli} position={[1.39, 0.51, 5.08]} scale={[0.24, 0.06, 0.24]} />
-      <mesh geometry={nodes.Base_Mesa008.geometry} material={(props.ids.includes()) ? selected_material : nodes.Base_Mesa008.material} position={[0.05, 0.14, 5.07]} scale={[0.08, -0.05, 0.08]} />
-      <mesh geometry={nodes.Mesa008.geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[0.09, 0.2, 5.07]} scale={[0.26, -0.01, 0.26]} />
-      <mesh geometry={nodes.Sombrilla008.geometry} material={(props.ids.includes()) ? selected_material : materials.Lapizlazuli} position={[0.07, 0.51, 5.08]} scale={[0.24, 0.06, 0.24]} />
-      <mesh geometry={nodes.Base_Mesa009.geometry} material={(props.ids.includes()) ? selected_material : nodes.Base_Mesa009.material} position={[1.46, 0.14, 4.07]} scale={[0.08, -0.05, 0.08]} />
-      <mesh geometry={nodes.Mesa009.geometry} material={(props.ids.includes()) ? selected_material : materials.Metal} position={[1.5, 0.2, 4.07]} scale={[0.26, -0.01, 0.26]} />
-      <mesh geometry={nodes.Sombrilla009.geometry} material={(props.ids.includes()) ? selected_material : materials.Lapizlazuli} position={[1.48, 0.51, 4.07]} scale={[0.24, 0.06, 0.24]} />
+      <mesh geometry={nodes.Plane.geometry} material={ grass_material} position={[3.15, 0.09, -3.44]} scale={[9.25, 1.07, 9.93]} />
+      <mesh geometry={nodes['3C304'].geometry} material={(props.ids.includes('3C304')) ? selected_material : nodes['3C304'].material} position={[-1.02, 2.09, 1.51]} scale={[0.2, 0.33, 0.27]} />
+      <mesh geometry={nodes['3C305'].geometry} material={(props.ids.includes('3C305')) ? selected_material : nodes['3C305'].material} position={[-1.32, 2.09, 0.84]} scale={[0.2, 0.33, 0.27]} />
+      <mesh geometry={nodes['3C306'].geometry} material={(props.ids.includes('3C306')) ? selected_material : nodes['3C306'].material} position={[-1.32, 2.09, 0.13]} scale={[0.2, 0.33, 0.34]} />
+      <mesh geometry={nodes['3C307'].geometry} material={(props.ids.includes('3C307')) ? selected_material : nodes['3C307'].material} position={[-1.32, 2.09, -0.61]} scale={[0.2, 0.33, 0.32]} />
+      <mesh geometry={nodes['3C308'].geometry} material={(props.ids.includes('3C308')) ? selected_material : nodes['3C308'].material} position={[-1.03, 2.09, -1.25]} scale={[0.2, 0.33, 0.26]} />
+      <mesh geometry={nodes['3LR1_302'].geometry} material={(props.ids.includes('3LR1_302')) ? selected_material : nodes['3LR1_302'].material} position={[-0.25, 2.09, 1.46]} scale={[0.56, 0.33, 0.37]} />
+      <mesh geometry={nodes['3LR2_303'].geometry} material={(props.ids.includes('3LR2_303')) ? selected_material : nodes['3LR2_303'].material} position={[-0.25, 2.09, 0.69]} scale={[0.56, 0.33, 0.37]} />
+      <mesh geometry={nodes['3LR_301'].geometry} material={(props.ids.includes('3LR_301')) ? selected_material : nodes['3LR_301'].material} position={[-0.25, 2.09, 2.24]} scale={[0.56, 0.33, 0.37]} />
+      <mesh geometry={nodes['3LH310'].geometry} material={(props.ids.includes('3LH310')) ? selected_material : nodes['3LH310'].material} position={[-0.25, 2.09, -1.95]} scale={[0.56, 0.33, 0.49]} />
+      <mesh geometry={nodes['3LH309'].geometry} material={(props.ids.includes('3LH309')) ? selected_material : nodes['3LH309'].material} position={[-0.25, 2.09, -0.55]} scale={[0.56, 0.33, 0.49]} />
+      <mesh geometry={nodes['3A310A'].geometry} material={(props.ids.includes('3A310A')) ? selected_material : nodes['3A310A'].material} position={[-0.25, 2.09, -1.25]} scale={[0.56, 0.33, 0.13]} />
+      <mesh geometry={nodes['3Ventanal1'].geometry} material={ materials.Cristal} position={[-0.74, 2.08, 0.14]} rotation={[-Math.PI, 0, -Math.PI]} scale={[0.99, 0.36, 2.13]} />
+      <mesh geometry={nodes['3Ventanal3'].geometry} material={ materials.Cristal} position={[0.38, 1.27, 0.17]} scale={[1.91, 0.39, 1.84]} />
+      <mesh geometry={nodes['3Ventanal2'].geometry} material={ materials.Cristal} position={[0.38, 1.73, 0.17]} scale={[2.03, 0.39, 2.05]} />
+      <mesh geometry={nodes['3TechoTrasero'].geometry} material={ nodes['3TechoTrasero'].material} position={[0.5, 2.16, 0.14]} scale={[2.2, 0.18, 2.25]} />
+      <mesh geometry={nodes['3BaseTrasera'].geometry} material={ nodes['3BaseTrasera'].material} position={[0.59, 0.97, 0.14]} scale={[1.6, 0.88, 1.95]} />
+      <mesh geometry={nodes['3Base1'].geometry} material={ materials.Piedra} position={[-0.13, 0.31, -0.68]} scale={[1, 0.27, 0.64]} />
+      <mesh geometry={nodes['3Base2'].geometry} material={ materials.Piedra} position={[-0.13, 0.31, 1.06]} rotation={[Math.PI, -0.01, Math.PI]} scale={[1, 0.27, 0.64]} />
+      <mesh geometry={nodes['3Base3'].geometry} material={ materials.Piedra} position={[1.88, 0.31, 1.6]} rotation={[Math.PI, -0.01, Math.PI]} scale={[0.61, 0.27, 0.84]} />
+      <mesh geometry={nodes['3Base4'].geometry} material={ materials.Piedra} position={[1.88, 0.31, -1.42]} scale={[0.61, 0.27, 0.84]} />
+      <mesh geometry={nodes['3Balcon'].geometry} material={ nodes['3Balcon'].material} position={[1.97, 0.66, 0.14]} rotation={[0, 0.02, 0]} scale={[0.65, 0.07, 0.87]} />
+      <mesh geometry={nodes['3LabSuperiores'].geometry} material={ nodes['3LabSuperiores'].material} position={[-0.13, 2.11, 0.09]} scale={[1.05, 0.37, 2.55]} />
+      <mesh geometry={nodes['3Pilar'].geometry} material={ nodes['3Pilar'].material} position={[-0.98, 0.91, 2.49]} scale={[-0.07, 0.88, 0.07]} />
+      <mesh geometry={nodes['3Pilar001'].geometry} material={ nodes['3Pilar001'].material} position={[-0.98, 0.91, -2.37]} scale={[-0.07, 0.88, 0.07]} />
+      <mesh geometry={nodes['3Pilar002'].geometry} material={ nodes['3Pilar002'].material} position={[-1.08, 1.17, 1.62]} scale={[-0.07, 0.62, 0.07]} />
+      <mesh geometry={nodes['3Pilar003'].geometry} material={ nodes['3Pilar003'].material} position={[-1.08, 1.17, -1.27]} scale={[-0.07, 0.62, 0.07]} />
+      <mesh geometry={nodes['3Pilar004'].geometry} material={ nodes['3Pilar004'].material} position={[0.82, 0.91, -2.37]} scale={[-0.07, 0.88, 0.07]} />
+      <mesh geometry={nodes['3Pilar005'].geometry} material={ nodes['3Pilar005'].material} position={[0.7, 0.91, 2.49]} scale={[-0.07, 0.88, 0.07]} />
+      <mesh geometry={nodes['3B200'].geometry} material={(props.ids.includes('3B200')) ? selected_material : nodes['3B200'].material} position={[0.62, 1.31, 1.24]} scale={[0.27, 0.27, 0.62]} />
+      <mesh geometry={nodes['3B200A'].geometry} material={(props.ids.includes('3B200A')) ? selected_material : nodes['3B200A'].material} position={[-0.02, 1.31, 1.15]} scale={[0.27, 0.27, 0.62]} />
+      <mesh geometry={nodes['3Biblioteca_202'].geometry} material={(props.ids.includes('3Biblioteca_202')) ? selected_material : nodes['3Biblioteca_202'].material} position={[-0.61, 1.43, 0.14]} rotation={[-Math.PI, -0.01, -Math.PI]} scale={[0.87, 0.26, 1.17]} />
+      <mesh geometry={nodes['3C203'].geometry} material={(props.ids.includes('3C203')) ? selected_material : nodes['3C203'].material} position={[-0.3, 1.31, -1.13]} scale={[0.28, 0.27, 0.23]} />
+      <mesh geometry={nodes['3C206'].geometry} material={(props.ids.includes('3C206')) ? selected_material : nodes['3C206'].material} position={[-0.07, 1.3, -0.45]} scale={[0.17, 0.27, 0.16]} />
+      <mesh geometry={nodes['3C206B'].geometry} material={(props.ids.includes('3C206B')) ? selected_material : nodes['3C206B'].material} position={[0.3, 1.3, -0.45]} scale={[0.17, 0.27, 0.16]} />
+      <mesh geometry={nodes['3C207'].geometry} material={(props.ids.includes('3C207')) ? selected_material : nodes['3C207'].material} position={[0.74, 1.3, -0.45]} scale={[0.24, 0.27, 0.16]} />
+      <mesh geometry={nodes['3LSR_205'].geometry} material={(props.ids.includes('3LSR_205')) ? selected_material : nodes['3LSR_205'].material} position={[0.95, 1.31, -1.06]} scale={[0.27, 0.27, 0.42]} />
+      <mesh geometry={nodes['3LTI201'].geometry} material={(props.ids.includes('3LTI201')) ? selected_material : nodes['3LTI201'].material} position={[1.16, 1.31, 1.49]} scale={[0.18, 0.27, 0.19]} />
+      <mesh geometry={nodes['3LTS_204'].geometry} material={(props.ids.includes('3LTS_204')) ? selected_material : nodes['3LTS_204'].material} position={[0.35, 1.31, -1.13]} scale={[0.27, 0.27, 0.23]} />
+      <mesh geometry={nodes['3S208'].geometry} material={(props.ids.includes('3S208')) ? selected_material : nodes['3S208'].material} position={[1.91, 1.31, -1.44]} scale={[0.63, 0.27, 0.84]} />
+      <mesh geometry={nodes['3LC101'].geometry} material={(props.ids.includes('3LC101')) ? selected_material : nodes['3LC101'].material} position={[-0.13, 0.85, -0.68]} scale={[1, 0.27, 0.64]} />
+      <mesh geometry={nodes['3LC104'].geometry} material={(props.ids.includes('3LC104')) ? selected_material : nodes['3LC104'].material} position={[1.91, 0.8, -1.44]} scale={[0.63, 0.27, 0.84]} />
+      <mesh geometry={nodes['3LC109'].geometry} material={(props.ids.includes('3LC109')) ? selected_material : nodes['3LC109'].material} position={[1.91, 0.95, 1.62]} scale={[0.63, 0.39, 0.84]} />
+      <mesh geometry={nodes['3LC114'].geometry} material={(props.ids.includes('3LC114')) ? selected_material : nodes['3LC114'].material} position={[-0.13, 0.85, 1.05]} scale={[1, 0.27, 0.64]} />
+      <mesh geometry={nodes['3C106'].geometry} material={(props.ids.includes('3C106')) ? selected_material : nodes['3C106'].material} position={[1.93, 0.8, -0.34]} scale={[0.15, 0.19, 0.21]} />
+      <mesh geometry={nodes['3C107'].geometry} material={(props.ids.includes('3C107')) ? selected_material : nodes['3C107'].material} position={[1.92, 0.8, 0.33]} scale={[0.15, 0.19, 0.21]} />
+      <mesh geometry={nodes['3C105'].geometry} material={(props.ids.includes('3C105')) ? selected_material : nodes['3C105'].material} position={[1.58, 0.8, -0.41]} scale={[0.15, 0.19, 0.15]} />
+      <mesh geometry={nodes['3C108'].geometry} material={(props.ids.includes('3C108')) ? selected_material : nodes['3C108'].material} position={[1.58, 0.8, 0.4]} scale={[0.15, 0.19, 0.15]} />
+      <mesh geometry={nodes['3CSIC002'].geometry} material={(props.ids.includes('3CSIC002')) ? selected_material : nodes['3CSIC002'].material} position={[1.91, 0.28, -0.09]} scale={[0.15, 0.19, 0.43]} />
+      <mesh geometry={nodes['3CSIC003'].geometry} material={(props.ids.includes('3CSIC003')) ? selected_material : nodes['3CSIC003'].material} position={[1.56, 0.28, -0.09]} scale={[0.15, 0.19, 0.43]} />
+      <mesh geometry={nodes['3C006'].geometry} material={(props.ids.includes('3C006')) ? selected_material : nodes['3C006'].material} position={[0, 0.29, -0.91]} scale={[0.15, 0.19, 0.23]} />
+      <mesh geometry={nodes['3C007'].geometry} material={(props.ids.includes('3C007')) ? selected_material : nodes['3C007'].material} position={[-0.07, 0.29, -0.33]} scale={[0.09, 0.19, 0.15]} />
+      <mesh geometry={nodes['3C007A'].geometry} material={(props.ids.includes('3C007A')) ? selected_material : nodes['3C007A'].material} position={[0.12, 0.29, -0.33]} scale={[0.09, 0.19, 0.15]} />
+      <mesh geometry={nodes['3C008'].geometry} material={(props.ids.includes('3C008')) ? selected_material : nodes['3C008'].material} position={[0.47, 0.29, -0.33]} scale={[0.12, 0.19, 0.15]} />
+      <mesh geometry={nodes['3C009'].geometry} material={(props.ids.includes('3C009')) ? selected_material : nodes['3C009'].material} position={[0.75, 0.29, -0.33]} scale={[0.12, 0.19, 0.15]} />
+      <mesh geometry={nodes['3C010'].geometry} material={(props.ids.includes('3C010')) ? selected_material : nodes['3C010'].material} position={[1.03, 0.29, -0.34]} scale={[0.12, 0.19, 0.15]} />
+      <mesh geometry={nodes['3C011'].geometry} material={(props.ids.includes('3C011')) ? selected_material : nodes['3C011'].material} position={[1.29, 0.29, -0.21]} scale={[0.11, 0.19, 0.27]} />
+      <mesh geometry={nodes['4S101'].geometry} material={(props.ids.includes('4S101')) ? selected_material : nodes['4S101'].material} position={[0.34, 0.27, -4.59]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['4S102'].geometry} material={(props.ids.includes('4S102')) ? selected_material : nodes['4S102'].material} position={[0.34, 0.27, -5.61]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['4S103'].geometry} material={(props.ids.includes('4S103')) ? selected_material : nodes['4S103'].material} position={[0.34, 0.27, -6.64]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['4S104'].geometry} material={(props.ids.includes('4S104')) ? selected_material : nodes['4S104'].material} position={[0.34, 0.27, -7.67]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['4Soteguela1'].geometry} material={ nodes['4Soteguela1'].material} position={[0.58, 0.59, -6.12]} scale={[0.54, 0.03, 2.07]} />
+      <mesh geometry={nodes['4Soteguela1B'].geometry} material={ nodes['4Soteguela1B'].material} position={[2.03, 0.2, -9.71]} scale={[0.9, 0.03, 0.77]} />
+      <mesh geometry={nodes['4S201'].geometry} material={(props.ids.includes('4S201')) ? selected_material : nodes['4S201'].material} position={[0.34, 0.86, -4.59]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['4S202'].geometry} material={(props.ids.includes('4S202')) ? selected_material : nodes['4S202'].material} position={[0.34, 0.86, -5.6]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['4S203'].geometry} material={(props.ids.includes('4S203')) ? selected_material : nodes['4S203'].material} position={[0.34, 0.86, -6.63]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['4S204'].geometry} material={(props.ids.includes('4S204')) ? selected_material : nodes['4S204'].material} position={[0.34, 0.86, -7.67]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['4Soteguela2'].geometry} material={ nodes['4Soteguela2'].material} position={[0.58, 1.09, -6.12]} scale={[0.54, 0.04, 2.07]} />
+      <mesh geometry={nodes['4AS_208'].geometry} material={(props.ids.includes('4AS_208')) ? selected_material : nodes['4AS_208'].material} position={[1.79, 0.44, -9.97]} scale={[0.31, 0.19, 0.57]} />
+      <mesh geometry={nodes['4DIR_211B'].geometry} material={(props.ids.includes('4DIR_211B')) ? selected_material : nodes['4DIR_211B'].material} position={[3.39, 0.44, -9.9]} scale={[0.47, 0.19, 0.61]} />
+      <mesh geometry={nodes['4ARCHIVO_210'].geometry} material={(props.ids.includes('4ARCHIVO_210')) ? selected_material : nodes['4ARCHIVO_210'].material} position={[2.29, 0.44, -9.96]} scale={[0.16, 0.19, 0.55]} />
+      <mesh geometry={nodes['4B200B'].geometry} material={(props.ids.includes('4B200B')) ? selected_material : nodes['4B200B'].material} position={[-0.08, 0.46, -8.62]} scale={[0.48, 0.21, 0.24]} />
+      <mesh geometry={nodes['4SS_PP_205'].geometry} material={(props.ids.includes('4SS_PP_205')) ? selected_material : nodes['4SS_PP_205'].material} position={[-0.08, 0.46, -9.18]} scale={[0.48, 0.21, 0.24]} />
+      <mesh geometry={nodes['4iLAB_206'].geometry} material={(props.ids.includes('4iLAB_206')) ? selected_material : nodes['4iLAB_206'].material} position={[-1.16, 0.46, -9.78]} scale={[0.39, 0.21, 0.57]} />
+      <mesh geometry={nodes['4Soteguela2B'].geometry} material={ nodes['4Soteguela2B'].material} position={[2.03, 0.66, -9.71]} scale={[0.9, 0.03, 0.77]} />
+      <mesh geometry={nodes['4S301'].geometry} material={(props.ids.includes('4S301')) ? selected_material : nodes['4S301'].material} position={[0.34, 1.38, -4.59]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['4S303'].geometry} material={(props.ids.includes('4S303')) ? selected_material : nodes['4S303'].material} position={[0.34, 1.38, -5.6]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['4S304'].geometry} material={(props.ids.includes('4S304')) ? selected_material : nodes['4S304'].material} position={[0.34, 1.38, -6.63]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['4S305'].geometry} material={(props.ids.includes('4S305')) ? selected_material : nodes['4S305'].material} position={[0.34, 1.38, -7.67]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['4Soteguela3'].geometry} material={ nodes['4Soteguela3'].material} position={[0.58, 1.71, -6.12]} scale={[0.54, 0.08, 2.07]} />
+      <mesh geometry={nodes['4B200'].geometry} material={(props.ids.includes('4B200')) ? selected_material : nodes['4B200'].material} position={[-0.08, 1, -8.63]} scale={[0.48, 0.21, 0.24]} />
+      <mesh geometry={nodes['4LABCERT_306'].geometry} material={(props.ids.includes('4LABCERT_306')) ? selected_material : nodes['4LABCERT_306'].material} position={[-1.16, 1.02, -9.78]} scale={[0.39, 0.21, 0.57]} />
+      <mesh geometry={nodes['4S308'].geometry} material={(props.ids.includes('4S308')) ? selected_material : nodes['4S308'].material} position={[3.4, 0.93, -9.71]} scale={[0.48, 0.29, 0.76]} />
+      <mesh geometry={nodes['4S307'].geometry} material={(props.ids.includes('4S307')) ? selected_material : nodes['4S307'].material} position={[1.96, 0.93, -9.95]} scale={[0.48, 0.22, 0.54]} />
+      <mesh geometry={nodes['4Soteguela3B'].geometry} material={ nodes['4Soteguela3B'].material} position={[2.03, 1.19, -9.71]} scale={[0.9, 0.03, 0.77]} />
+      <mesh geometry={nodes['4C302A'].geometry} material={(props.ids.includes('4C302A')) ? selected_material : nodes['4C302A'].material} position={[0.53, 1.38, -5.23]} scale={[0.11, 0.24, 0.12]} />
+      <mesh geometry={nodes['4C302'].geometry} material={(props.ids.includes('4C302')) ? selected_material : nodes['4C302'].material} position={[0.53, 1.38, -5.48]} scale={[0.11, 0.24, 0.1]} />
+      <mesh geometry={nodes['4Barda'].geometry} material={ nodes['4Barda'].material} position={[1.17, 0.9, -8.44]} scale={[-0.06, 0.89, 0.33]} />
+      <mesh geometry={nodes['4Barda2'].geometry} material={ nodes['4Barda2'].material} position={[1.49, 0.9, -8.86]} rotation={[0, Math.PI / 2, 0]} scale={[-0.06, 0.89, 0.33]} />
+      <mesh geometry={nodes['4Barda3'].geometry} material={ materials.Piedra} position={[2.85, 0.14, -8.86]} rotation={[0, Math.PI / 2, 0]} scale={[-0.06, 0.19, 1.02]} />
+      <mesh geometry={nodes['4Murales'].geometry} material={ nodes['4Murales'].material} position={[0.18, 1.06, -9.76]} scale={[0.89, 1, 1.57]} />
+      <mesh geometry={nodes['4Columna'].geometry} material={ nodes['4Columna'].material} position={[-0.67, 1.02, -11.43]} scale={[-0.04, 0.97, -0.09]} />
+      <mesh geometry={nodes['4Columna2'].geometry} material={ nodes['4Columna2'].material} position={[1.02, 1.02, -11.43]} scale={[-0.04, 0.97, -0.09]} />
+      <mesh geometry={nodes['4Corniza'].geometry} material={ nodes['4Corniza'].material} position={[0.18, 1.98, -11.42]} scale={[0.89, 0.09, -0.08]} />
+      <mesh geometry={nodes['4MuralesVentana'].geometry} material={ materials.Cristal} position={[0.18, 1.06, -11.35]} scale={[0.84, 0.84, -0.05]} />
+      <mesh geometry={nodes['4Barda4'].geometry} material={ nodes['4Barda4'].material} position={[2.5, 0.88, -10.53]} scale={[1.37, 0.92, -0.05]} />
+      <mesh geometry={nodes['4MiniVentana'].geometry} material={ red_material} position={[2.55, 1.54, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
+      <mesh geometry={nodes['4MiniVentana1'].geometry} material={ red_material} position={[2.09, 1.54, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
+      <mesh geometry={nodes['4MiniVentana2'].geometry} material={ red_material} position={[1.6, 1.54, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
+      <mesh geometry={nodes['4MiniVentana3'].geometry} material={ red_material} position={[2.55, 1.08, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
+      <mesh geometry={nodes['4MiniVentana4'].geometry} material={ red_material} position={[2.06, 1.07, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
+      <mesh geometry={nodes['4MiniVentana5'].geometry} material={ red_material} position={[1.57, 1.08, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
+      <mesh geometry={nodes['4MiniVentana6'].geometry} material={ red_material} position={[2.55, 0.54, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
+      <mesh geometry={nodes['4MiniVentana7'].geometry} material={ red_material} position={[2.06, 0.52, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
+      <mesh geometry={nodes['4MiniVentana8'].geometry} material={ red_material} position={[1.57, 0.49, -10.71]} rotation={[Math.PI / 2, 0, 0]} scale={[0.16, 0.13, 0.14]} />
+      <mesh geometry={nodes['4Entrada'].geometry} material={ nodes['4Entrada'].material} position={[0.2, 0.31, -11.54]} rotation={[Math.PI / 2, 0, 0]} scale={[0.21, 0.11, 0.35]} />
+      <mesh geometry={nodes['4Escalon'].geometry} material={ nodes['4Escalon'].material} position={[0.18, 0.09, -11.42]} scale={[0.89, 0.09, -0.08]} />
+      <mesh geometry={nodes['4Ala_Sur'].geometry} material={ nodes['4Ala_Sur'].material} position={[-1.18, 1.06, -9.76]} scale={[0.44, 1, 0.6]} />
+      <mesh geometry={nodes['4Sventanas3'].geometry} material={ nglass_material} position={[0.68, 1.5, -6.11]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.03]} />
+      <mesh geometry={nodes['4Sventanas2'].geometry} material={ nglass_material} position={[0.68, 0.89, -6.11]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.03]} />
+      <mesh geometry={nodes['4Sventanas1'].geometry} material={ nglass_material} position={[0.68, 0.4, -6.11]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.03]} />
+      <mesh geometry={nodes['4Sventanas1T'].geometry} material={ nglass_material} position={[0.01, 0.4, -6.11]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.03]} />
+      <mesh geometry={nodes['4Sventanas2T'].geometry} material={ nglass_material} position={[0.01, 0.99, -6.11]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.03]} />
+      <mesh geometry={nodes['4Sventanas3T'].geometry} material={ nglass_material} position={[0.01, 1.48, -6.11]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.03]} />
+      <mesh geometry={nodes['4C_108_110'].geometry} material={(props.ids.includes('4C_108_110')) ? selected_material : materials.Piedra} position={[2.66, 0.12, -9.86]} rotation={[0, Math.PI / 2, 0]} scale={[-0.55, 0.14, 1.24]} />
+      <mesh geometry={nodes['4S404'].geometry} material={(props.ids.includes('4S404')) ? selected_material : nodes['4S404'].material} position={[3.4, 1.5, -9.71]} scale={[0.48, 0.29, 0.77]} />
+      <mesh geometry={nodes['4S403'].geometry} material={(props.ids.includes('4S403')) ? selected_material : nodes['4S403'].material} position={[1.96, 1.51, -9.95]} scale={[0.48, 0.22, 0.54]} />
+      <mesh geometry={nodes['4S401'].geometry} material={(props.ids.includes('4S401')) ? selected_material : nodes['4S401'].material} position={[-0.08, 1.51, -8.63]} scale={[0.48, 0.21, 0.24]} />
+      <mesh geometry={nodes['4S402'].geometry} material={(props.ids.includes('4S402')) ? selected_material : nodes['4S402'].material} position={[-1.16, 1.53, -9.78]} scale={[0.39, 0.21, 0.57]} />
+      <mesh geometry={nodes['4Soteguela4B'].geometry} material={ nodes['4Soteguela4B'].material} position={[2.03, 1.78, -9.71]} scale={[0.9, 0.03, 0.77]} />
+      <mesh geometry={nodes['4SventanasL1'].geometry} material={ nglass_material} position={[-1.64, 1.83, -10.09]} rotation={[0, 0, -Math.PI / 2]} scale={[0.15, 1, 0.17]} />
+      <mesh geometry={nodes['4SventanasL2'].geometry} material={ nglass_material} position={[-1.64, 1.83, -9.52]} rotation={[0, 0, -Math.PI / 2]} scale={[0.15, 1, 0.17]} />
+      <mesh geometry={nodes['4SventanasL3'].geometry} material={ nglass_material} position={[-1.64, 1.22, -10.09]} rotation={[0, 0, -Math.PI / 2]} scale={[0.15, 1, 0.17]} />
+      <mesh geometry={nodes['4SventanasL4'].geometry} material={ nglass_material} position={[-1.64, 1.22, -9.52]} rotation={[0, 0, -Math.PI / 2]} scale={[0.15, 1, 0.17]} />
+      <mesh geometry={nodes['4SventanasL5'].geometry} material={ nglass_material} position={[-1.64, 0.61, -10.09]} rotation={[0, 0, -Math.PI / 2]} scale={[0.15, 1, 0.17]} />
+      <mesh geometry={nodes['4SventanasL6'].geometry} material={ nglass_material} position={[-1.64, 0.62, -9.53]} rotation={[0, 0, -Math.PI / 2]} scale={[0.15, 1, 0.17]} />
+      <mesh geometry={nodes['4SVentanasF1'].geometry} material={ nglass_material} position={[3.28, 1.53, -10.59]} rotation={[-Math.PI / 2, 1.57, 0]} scale={[0.15, 1, 0.25]} />
+      <mesh geometry={nodes['4SventanasF2'].geometry} material={ nglass_material} position={[3.28, 1.07, -10.59]} rotation={[-Math.PI / 2, 1.57, 0]} scale={[0.15, 1, 0.25]} />
+      <mesh geometry={nodes['4SventanasF3'].geometry} material={ nglass_material} position={[3.28, 0.53, -10.59]} rotation={[-Math.PI / 2, 1.57, 0]} scale={[0.15, 1, 0.25]} />
+      <mesh geometry={nodes['4SVentanasF3R'].geometry} material={ nglass_material} position={[3.4, 1.53, -8.93]} rotation={[-Math.PI / 2, 1.57, 0]} scale={[0.15, 1, 0.25]} />
+      <mesh geometry={nodes['4SVentanasF2R'].geometry} material={ nglass_material} position={[3.4, 0.97, -8.93]} rotation={[-Math.PI / 2, 1.57, 0]} scale={[0.15, 1, 0.25]} />
+      <mesh geometry={nodes['2AUDITORIO_102'].geometry} material={(props.ids.includes('2AUDITORIO_102')) ? selected_material : nodes['2AUDITORIO_102'].material} position={[4.77, 0.27, 1.88]} scale={[0.33, 0.24, 0.82]} />
+      <mesh geometry={nodes['2B100'].geometry} material={(props.ids.includes('2B100')) ? selected_material : nodes['2B100'].material} position={[4.77, 0.27, -2.65]} scale={[0.33, 0.24, 0.25]} />
+      <mesh geometry={nodes['2B100B'].geometry} material={(props.ids.includes('2B100B')) ? selected_material : nodes['2B100B'].material} position={[4.77, 0.27, -2.13]} scale={[0.33, 0.24, 0.25]} />
+      <mesh geometry={nodes['2C103_108'].geometry} material={(props.ids.includes('2C103_108')) ? selected_material : nodes['2C103_108'].material} position={[4.77, 0.27, 0.53]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['2C109_114'].geometry} material={(props.ids.includes('2C109_114')) ? selected_material : nodes['2C109_114'].material} position={[4.77, 0.27, -0.51]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['2COMEDOR_100'].geometry} material={(props.ids.includes('2COMEDOR_100')) ? selected_material : nodes['2COMEDOR_100'].material} position={[4.77, 0.27, 2.9]} scale={[0.33, 0.24, 0.16]} />
+      <mesh geometry={nodes['2C209'].geometry} material={(props.ids.includes('2C209')) ? selected_material : nodes['2C209'].material} position={[5, 0.86, -2.56]} scale={[0.52, 0.24, 0.34]} />
+      <mesh geometry={nodes['2LARQ_206'].geometry} material={(props.ids.includes('2LARQ_206')) ? selected_material : nodes['2LARQ_206'].material} position={[4.77, 0.86, 0.54]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['2LASR_203'].geometry} material={(props.ids.includes('2LASR_203')) ? selected_material : nodes['2LASR_203'].material} position={[4.77, 0.86, 1.92]} scale={[0.33, 0.24, 0.12]} />
+      <mesh geometry={nodes['2LAZTLI_204'].geometry} material={(props.ids.includes('2LAZTLI_204')) ? selected_material : nodes['2LAZTLI_204'].material} position={[4.77, 0.86, 1.55]} scale={[0.33, 0.24, 0.23]} />
+      <mesh geometry={nodes['2LBD_207'].geometry} material={(props.ids.includes('2LBD_207')) ? selected_material : nodes['2LBD_207'].material} position={[4.77, 0.86, -0.5]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['2LEC_208'].geometry} material={(props.ids.includes('2LEC_208')) ? selected_material : nodes['2LEC_208'].material} position={[4.71, 0.86, -2.22]} scale={[0.23, 0.24, 0.33]} />
+      <mesh geometry={nodes['2LSL_205'].geometry} material={(props.ids.includes('2LSL_205')) ? selected_material : nodes['2LSL_205'].material} position={[4.77, 0.86, 1.18]} scale={[0.33, 0.24, 0.12]} />
+      <mesh geometry={nodes['2LMM_201_202'].geometry} material={(props.ids.includes('2LMM_201_202')) ? selected_material : nodes['2LMM_201_202'].material} position={[4.77, 0.86, 2.58]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['2C_301'].geometry} material={(props.ids.includes('2C_301')) ? selected_material : nodes['2C_301'].material} position={[5.32, 1.43, 2.78]} scale={[0.2, 0.24, 0.3]} />
+      <mesh geometry={nodes['2C_305_311'].geometry} material={(props.ids.includes('2C_305_311')) ? selected_material : nodes['2C_305_311'].material} position={[5, 1.43, -2.39]} scale={[0.52, 0.24, 0.51]} />
+      <mesh geometry={nodes['2C_305A_305B'].geometry} material={(props.ids.includes('2C_305A_305B')) ? selected_material : nodes['2C_305A_305B'].material} position={[4.77, 1.43, -0.5]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['2LDT_304'].geometry} material={(props.ids.includes('2LDT_304')) ? selected_material : nodes['2LDT_304'].material} position={[4.77, 1.43, 1.42]} scale={[0.33, 0.24, 0.21]} />
+      <mesh geometry={nodes['2LRM_302'].geometry} material={(props.ids.includes('2LRM_302')) ? selected_material : nodes['2LRM_302'].material} position={[4.77, 1.43, 2.58]} scale={[0.33, 0.24, 0.51]} />
+      <mesh geometry={nodes['2MiLAB_303'].geometry} material={(props.ids.includes('2MiLAB_303')) ? selected_material : nodes['2MiLAB_303'].material} position={[4.77, 1.43, 1.85]} scale={[0.33, 0.24, 0.21]} />
+      <mesh geometry={nodes['2SLISTER_305'].geometry} material={(props.ids.includes('2SLISTER_305')) ? selected_material : nodes['2SLISTER_305'].material} position={[4.77, 1.43, 0.61]} scale={[0.33, 0.24, 0.58]} />
+      <mesh geometry={nodes['2Soteguela1'].geometry} material={ nodes['2Soteguela1'].material} position={[5, 0.57, 0.08]} scale={[0.54, 0.03, 3.01]} />
+      <mesh geometry={nodes['2Soteguela2'].geometry} material={ nodes['2Soteguela2'].material} position={[5, 1.14, 0.09]} scale={[0.54, 0.04, 3.01]} />
+      <mesh geometry={nodes['2Soteguela3'].geometry} material={ nodes['2Soteguela3'].material} position={[5, 1.77, 0.09]} scale={[0.54, 0.08, 3]} />
+      <mesh geometry={nodes['2LATERAL1'].geometry} material={ materials.Brick} position={[4.77, 0.94, -2.97]} scale={[0.33, 0.9, 0.04]} />
+      <mesh geometry={nodes['2LATERAL2'].geometry} material={ materials.Brick} position={[4.77, 0.94, 3.15]} scale={[0.33, 0.9, 0.04]} />
+      <mesh geometry={nodes['2Sventanas3F'].geometry} material={ nglass_material} position={[5.11, 1.53, 0.72]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 1.73]} />
+      <mesh geometry={nodes['2Sventanas2F'].geometry} material={ nglass_material} position={[5.11, 0.95, 1.06]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.05]} />
+      <mesh geometry={nodes['2Sventanas1F'].geometry} material={ nglass_material} position={[5.11, 0.4, 1.06]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.05]} />
+      <mesh geometry={nodes['2Sventanas1FR'].geometry} material={ nglass_material} position={[4.4, 0.4, 1.06]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.05]} />
+      <mesh geometry={nodes['2Sventanas2FR'].geometry} material={ nglass_material} position={[4.4, 0.93, 1.06]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.05]} />
+      <mesh geometry={nodes['2Sventanas3FR'].geometry} material={ materials.Cristal} position={[4.4, 1.49, 1.06]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 2.05]} />
+      <mesh geometry={nodes['1SALACUBICULOS'].geometry} material={ nodes['1SALACUBICULOS'].material} position={[8.74, 0.27, 2.34]} scale={[0.7, 0.24, 2.34]} />
+      <mesh geometry={nodes['1AUTOACCESO_102'].geometry} material={(props.ids.includes('1AUTOACCESO_102')) ? selected_material : nodes['1AUTOACCESO_102'].material} position={[8.74, 0.29, 0.37]} scale={[0.58, 0.21, 0.24]} />
+      <mesh geometry={nodes['1C_103'].geometry} material={(props.ids.includes('1C_103')) ? selected_material : nodes['1C_103'].material} position={[9.19, 0.29, 0.84]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_104'].geometry} material={(props.ids.includes('1C_104')) ? selected_material : nodes['1C_104'].material} position={[9.19, 0.29, 1.11]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_105'].geometry} material={(props.ids.includes('1C_105')) ? selected_material : nodes['1C_105'].material} position={[9.19, 0.29, 1.39]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_106'].geometry} material={(props.ids.includes('1C_106')) ? selected_material : nodes['1C_106'].material} position={[9.19, 0.29, 1.67]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_107'].geometry} material={(props.ids.includes('1C_107')) ? selected_material : nodes['1C_107'].material} position={[9.19, 0.29, 1.97]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_108'].geometry} material={(props.ids.includes('1C_108')) ? selected_material : nodes['1C_108'].material} position={[9.19, 0.29, 2.25]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_109'].geometry} material={(props.ids.includes('1C_109')) ? selected_material : nodes['1C_109'].material} position={[9.19, 0.29, 2.53]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_110'].geometry} material={(props.ids.includes('1C_110')) ? selected_material : nodes['1C_110'].material} position={[9.19, 0.29, 2.81]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_111'].geometry} material={(props.ids.includes('1C_111')) ? selected_material : nodes['1C_111'].material} position={[9.19, 0.29, 3.1]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_112'].geometry} material={(props.ids.includes('1C_112')) ? selected_material : nodes['1C_112'].material} position={[9.19, 0.29, 3.39]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_113'].geometry} material={(props.ids.includes('1C_113')) ? selected_material : nodes['1C_113'].material} position={[9.19, 0.29, 3.69]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_114'].geometry} material={(props.ids.includes('1C_114')) ? selected_material : nodes['1C_114'].material} position={[9.19, 0.29, 3.98]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_125'].geometry} material={(props.ids.includes('1C_125')) ? selected_material : nodes['1C_125'].material} position={[8.26, 0.29, 1.11]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_124'].geometry} material={(props.ids.includes('1C_124')) ? selected_material : nodes['1C_124'].material} position={[8.26, 0.29, 1.39]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_123'].geometry} material={(props.ids.includes('1C_123')) ? selected_material : nodes['1C_123'].material} position={[8.26, 0.29, 1.67]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_122'].geometry} material={(props.ids.includes('1C_122')) ? selected_material : nodes['1C_122'].material} position={[8.26, 0.29, 1.97]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_121'].geometry} material={(props.ids.includes('1C_121')) ? selected_material : nodes['1C_121'].material} position={[8.26, 0.29, 2.25]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_120'].geometry} material={(props.ids.includes('1C_120')) ? selected_material : nodes['1C_120'].material} position={[8.26, 0.29, 2.53]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_119'].geometry} material={(props.ids.includes('1C_119')) ? selected_material : nodes['1C_119'].material} position={[8.26, 0.29, 2.81]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_118'].geometry} material={(props.ids.includes('1C_118')) ? selected_material : nodes['1C_118'].material} position={[8.26, 0.29, 3.1]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_117'].geometry} material={(props.ids.includes('1C_117')) ? selected_material : nodes['1C_117'].material} position={[8.26, 0.29, 3.39]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_116'].geometry} material={(props.ids.includes('1C_116')) ? selected_material : nodes['1C_116'].material} position={[8.26, 0.29, 3.69]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1C_115'].geometry} material={(props.ids.includes('1C_115')) ? selected_material : nodes['1C_115'].material} position={[8.26, 0.29, 3.98]} scale={[0.17, 0.21, 0.13]} />
+      <mesh geometry={nodes['1RACK_100B'].geometry} material={(props.ids.includes('1RACK_100B')) ? selected_material : nodes['1RACK_100B'].material} position={[8.74, 0.29, 4.39]} scale={[0.58, 0.21, 0.24]} />
+      <mesh geometry={nodes['1UM_101'].geometry} material={(props.ids.includes('1UM_101')) ? selected_material : nodes['1UM_101'].material} position={[8.74, 0.27, -0.34]} scale={[0.7, 0.24, 0.35]} />
+      <mesh geometry={nodes['1SOTEGUELA1'].geometry} material={ nodes['1SOTEGUELA1'].material} position={[8.47, 0.62, 1.67]} scale={[0.97, 0.07, 3.01]} />
+      <mesh geometry={nodes['1POSGRADO'].geometry} material={(props.ids.includes('1POSGRADO')) ? selected_material : materials.Cristal} position={[8.47, 0.92, 1.67]} scale={[0.97, 0.2, 3.01]} />
+      <mesh geometry={nodes['1SOTEGUELA1001'].geometry} material={ nodes['1SOTEGUELA1001'].material} position={[8.47, 1.21, 1.67]} scale={[0.97, 0.07, 3.01]} />
+      <mesh geometry={nodes['1LATERAL2'].geometry} material={ materials.Brick} position={[8.74, 0.66, 4.73]} scale={[0.69, 0.63, 0.04]} />
+      <mesh geometry={nodes['1LATERAL2001'].geometry} material={ materials.Brick} position={[8.74, 0.66, -1.39]} scale={[0.69, 0.63, 0.04]} />
+      <mesh geometry={nodes['1SUBTERRANEO'].geometry} material={ nodes['1SUBTERRANEO'].material} position={[8.47, -0.14, 1.67]} scale={[0.97, 0.2, 3.01]} />
+      <mesh geometry={nodes['1S_001'].geometry} material={(props.ids.includes('1S_001')) ? selected_material : nodes['1S_001'].material} position={[8.8, -0.15, -0.17]} scale={[0.58, 0.17, 0.51]} />
+      <mesh geometry={nodes['1S_002'].geometry} material={(props.ids.includes('1S_002')) ? selected_material : nodes['1S_002'].material} position={[8.8, -0.15, 0.92]} scale={[0.58, 0.17, 0.56]} />
+      <mesh geometry={nodes['1S_003'].geometry} material={(props.ids.includes('1S_003')) ? selected_material : nodes['1S_003'].material} position={[8.8, -0.15, 2.07]} scale={[0.58, 0.17, 0.53]} />
+      <mesh geometry={nodes['1S_004'].geometry} material={(props.ids.includes('1S_004')) ? selected_material : nodes['1S_004'].material} position={[8.8, -0.15, 3.15]} scale={[0.58, 0.17, 0.5]} />
+      <mesh geometry={nodes['1S_005'].geometry} material={(props.ids.includes('1S_005')) ? selected_material : nodes['1S_005'].material} position={[8.8, -0.15, 4.17]} scale={[0.58, 0.17, 0.48]} />
+      <mesh geometry={nodes['1BTOC_006'].geometry} material={(props.ids.includes('1BTOC_006')) ? selected_material : nodes['1BTOC_006'].material} position={[7.86, -0.15, 4.41]} scale={[0.31, 0.17, 0.23]} />
+      <mesh geometry={nodes['1UM_101001'].geometry} material={(props.ids.includes('1UM_101001')) ? selected_material : nodes['1UM_101001'].material} position={[9.37, 0.27, -1.03]} scale={[0.08, 0.24, 0.31]} />
+      <mesh geometry={nodes['5C106'].geometry} material={(props.ids.includes('5C106')) ? selected_material : nodes['5C106'].material} position={[-2.67, 0.27, -6.37]} scale={[0.13, 0.22, 0.18]} />
+      <mesh geometry={nodes['5CUBOS'].geometry} material={ nodes['5CUBOS'].material} position={[-3.05, 0.27, -5.86]} scale={[0.53, 0.24, 0.71]} />
+      <mesh geometry={nodes['5LRV_107'].geometry} material={(props.ids.includes('5LRV_107')) ? selected_material : nodes['5LRV_107'].material} position={[-3.07, 0.27, -6.98]} scale={[0.53, 0.24, 0.37]} />
+      <mesh geometry={nodes['5S201'].geometry} material={(props.ids.includes('5S201')) ? selected_material : nodes['5S201'].material} position={[-3.05, 0.86, -4.79]} scale={[0.54, 0.24, 0.51]} />
+      <mesh geometry={nodes['5S202'].geometry} material={(props.ids.includes('5S202')) ? selected_material : nodes['5S202'].material} position={[-3.05, 0.86, -5.81]} scale={[0.53, 0.24, 0.51]} />
+      <mesh geometry={nodes['5S203'].geometry} material={(props.ids.includes('5S203')) ? selected_material : nodes['5S203'].material} position={[-3.05, 0.86, -6.85]} scale={[0.53, 0.24, 0.51]} />
+      <mesh geometry={nodes['5Soteguela1'].geometry} material={ nodes['5Soteguela1'].material} position={[-2.86, 0.57, -5.81]} scale={[0.75, 0.03, 1.6]} />
+      <mesh geometry={nodes['5Soteguela2'].geometry} material={ nodes['5Soteguela2'].material} position={[-2.85, 1.2, -5.8]} scale={[0.77, 0.07, 1.6]} />
+      <mesh geometry={nodes['5B100'].geometry} material={(props.ids.includes('5B100')) ? selected_material : nodes['5B100'].material} position={[-3.07, 0.27, -4.45]} scale={[0.53, 0.24, 0.16]} />
+      <mesh geometry={nodes['5C101'].geometry} material={(props.ids.includes('5C101')) ? selected_material : nodes['5C101'].material} position={[-2.67, 0.27, -5.76]} scale={[0.13, 0.22, 0.18]} />
+      <mesh geometry={nodes['5C101B'].geometry} material={(props.ids.includes('5C101B')) ? selected_material : nodes['5C101B'].material} position={[-2.96, 0.27, -5.76]} scale={[0.13, 0.22, 0.18]} />
+      <mesh geometry={nodes['5C104'].geometry} material={(props.ids.includes('5C104')) ? selected_material : nodes['5C104'].material} position={[-3.37, 0.27, -5.76]} scale={[0.13, 0.22, 0.18]} />
+      <mesh geometry={nodes['5C103001'].geometry} material={(props.ids.includes('5C103001')) ? selected_material : nodes['5C103001'].material} position={[-3.37, 0.27, -6.14]} scale={[0.13, 0.22, 0.18]} />
+      <mesh geometry={nodes['5C103'].geometry} material={(props.ids.includes('5C103')) ? selected_material : nodes['5C103'].material} position={[-3.21, 0.27, -5.37]} scale={[0.28, 0.22, 0.16]} />
+      <mesh geometry={nodes['5B100A'].geometry} material={(props.ids.includes('5B100A')) ? selected_material : nodes['5B100A'].material} position={[-3.07, 0.27, -4.89]} scale={[0.53, 0.24, 0.24]} />
+      <mesh geometry={nodes['5FACHADA1'].geometry} material={ materials.Lapizlazuli} position={[-3.62, 1.07, -4.76]} scale={[0.03, 0.23, 0.55]} />
+      <mesh geometry={nodes['5FACHADA2'].geometry} material={ materials.Lapizlazuli} position={[-3.62, 0.44, -5.26]} scale={[0.03, 0.4, 0.05]} />
+      <mesh geometry={nodes['5FACHADA3'].geometry} material={ materials.Lapizlazuli} position={[-3.62, 0.44, -4.26]} scale={[0.03, 0.4, 0.05]} />
+      <mesh geometry={nodes['5FACHADA4'].geometry} material={ materials.Metal} position={[-3.62, 0.73, -4.76]} scale={[0.03, 0.05, 0.45]} />
+      <mesh geometry={nodes['5FACHADA5'].geometry} material={ materials.Metal} position={[-3.62, 0.58, -4.76]} scale={[0.03, 0.05, 0.45]} />
+      <mesh geometry={nodes['5FACHADA6'].geometry} material={ materials.Metal} position={[-3.62, 0.42, -4.76]} scale={[0.03, 0.05, 0.45]} />
+      <mesh geometry={nodes['5FACHADA7'].geometry} material={ materials.Metal} position={[-3.62, 0.26, -4.76]} scale={[0.03, 0.05, 0.45]} />
+      <mesh geometry={nodes['5FACHADA8'].geometry} material={ materials.Metal} position={[-3.62, 0.13, -4.76]} scale={[0.03, 0.05, 0.45]} />
+      <mesh geometry={nodes['5ESCALERAS'].geometry} material={ materials.Lapizlazuli} position={[-3.05, 0.86, -7.73]} scale={[0.34, 0.81, 0.33]} />
+      <mesh geometry={nodes['5Sventanas1T'].geometry} material={ nglass_material} position={[-3.5, 0.4, -6.33]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 1.02]} />
+      <mesh geometry={nodes['5Sventanas2T'].geometry} material={ nglass_material} position={[-3.5, 0.99, -6.33]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 1.02]} />
+      <mesh geometry={nodes['5Sventanas2'].geometry} material={ nglass_material} position={[-2.51, 0.99, -5.82]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 1.5]} />
+      <mesh geometry={nodes['5Sventanas1'].geometry} material={ nglass_material} position={[-2.51, 0.4, -5.82]} rotation={[0, 0, -Math.PI / 2]} scale={[0.07, 1, 1.5]} />
+      <mesh geometry={nodes.Mesa.geometry} material={ materials.Metal} position={[3.82, 0.2, -4.85]} scale={[0.26, -0.01, 0.26]} />
+      <mesh geometry={nodes.Base_Mesa.geometry} material={ nodes.Base_Mesa.material} position={[3.78, 0.14, -4.85]} scale={[0.08, -0.05, 0.08]} />
+      <mesh geometry={nodes.Sombrilla.geometry} material={ red_material} position={[3.8, 0.51, -4.85]} scale={[0.24, 0.06, 0.24]} />
+      <mesh geometry={nodes.Base_Mesa001.geometry} material={ nodes.Base_Mesa001.material} position={[3.8, 0.14, -5.63]} scale={[0.08, -0.05, 0.08]} />
+      <mesh geometry={nodes.Mesa001.geometry} material={ materials.Metal} position={[3.84, 0.2, -5.63]} scale={[0.26, -0.01, 0.26]} />
+      <mesh geometry={nodes.Sombrilla001.geometry} material={ red_material} position={[3.82, 0.51, -5.62]} scale={[0.24, 0.06, 0.24]} />
+      <mesh geometry={nodes.Base_Mesa002.geometry} material={ nodes.Base_Mesa002.material} position={[4.73, 0.14, -5.36]} scale={[0.08, -0.05, 0.08]} />
+      <mesh geometry={nodes.Mesa002.geometry} material={ materials.Metal} position={[4.77, 0.2, -5.36]} scale={[0.26, -0.01, 0.26]} />
+      <mesh geometry={nodes.Sombrilla002.geometry} material={ red_material} position={[4.75, 0.51, -5.36]} scale={[0.24, 0.06, 0.24]} />
+      <mesh geometry={nodes.Base_Mesa003.geometry} material={ nodes.Base_Mesa003.material} position={[10.73, 0.14, 2.33]} scale={[0.08, -0.05, 0.08]} />
+      <mesh geometry={nodes.Mesa003.geometry} material={ materials.Metal} position={[10.77, 0.2, 2.33]} scale={[0.26, -0.01, 0.26]} />
+      <mesh geometry={nodes.Sombrilla003.geometry} material={ materials.Lapizlazuli} position={[10.75, 0.51, 2.33]} scale={[0.24, 0.06, 0.24]} />
+      <mesh geometry={nodes.Base_Mesa004.geometry} material={ nodes.Base_Mesa004.material} position={[10.73, 0.14, 3.68]} scale={[0.08, -0.05, 0.08]} />
+      <mesh geometry={nodes.Mesa004.geometry} material={ materials.Metal} position={[10.77, 0.2, 3.68]} scale={[0.26, -0.01, 0.26]} />
+      <mesh geometry={nodes.Sombrilla004.geometry} material={ materials.Lapizlazuli} position={[10.75, 0.51, 3.69]} scale={[0.24, 0.06, 0.24]} />
+      <mesh geometry={nodes.Base_Mesa005.geometry} material={ nodes.Base_Mesa005.material} position={[10.73, 0.14, 5.14]} scale={[0.08, -0.05, 0.08]} />
+      <mesh geometry={nodes.Mesa005.geometry} material={ materials.Metal} position={[10.77, 0.2, 5.14]} scale={[0.26, -0.01, 0.26]} />
+      <mesh geometry={nodes.Sombrilla005.geometry} material={ materials.Lapizlazuli} position={[10.75, 0.51, 5.15]} scale={[0.24, 0.06, 0.24]} />
+      <mesh geometry={nodes.Base_Mesa006.geometry} material={ nodes.Base_Mesa006.material} position={[9.05, 0.14, 5.4]} scale={[0.08, -0.05, 0.08]} />
+      <mesh geometry={nodes.Mesa006.geometry} material={ materials.Metal} position={[9.09, 0.2, 5.4]} scale={[0.26, -0.01, 0.26]} />
+      <mesh geometry={nodes.Sombrilla006.geometry} material={ materials.Lapizlazuli} position={[9.07, 0.51, 5.41]} scale={[0.24, 0.06, 0.24]} />
+      <mesh geometry={nodes.Bebedero1.geometry} material={ nodes.Bebedero1.material} position={[8.5, 0.32, -6.83]} scale={[0.16, -0.26, 0.16]} />
+      <mesh geometry={nodes.Bebedero2.geometry} material={ materials.Metal} position={[8.49, 0.59, -6.83]} scale={[0.26, -0.01, 0.26]} />
+      <mesh geometry={nodes.Caseta.geometry} material={ materials.Lapizlazuli} position={[11.53, 0.42, -2.16]} scale={[0.43, 0.27, 0.74]} />
+      <mesh geometry={nodes['2AUDITORIO_102001'].geometry} material={ nodes['2AUDITORIO_102001'].material} position={[2.92, 0.27, 5.05]} scale={[0.21, 0.24, 0.35]} />
+      <mesh geometry={nodes['2Soteguela1001'].geometry} material={ nodes['2Soteguela1001'].material} position={[2.61, 0.54, 5.05]} scale={[0.54, 0.02, 0.37]} />
+      <mesh geometry={nodes.Base_Mesa007.geometry} material={ nodes.Base_Mesa007.material} position={[1.37, 0.14, 5.07]} scale={[0.08, -0.05, 0.08]} />
+      <mesh geometry={nodes.Mesa007.geometry} material={ materials.Metal} position={[1.41, 0.2, 5.07]} scale={[0.26, -0.01, 0.26]} />
+      <mesh geometry={nodes.Sombrilla007.geometry} material={ materials.Lapizlazuli} position={[1.39, 0.51, 5.08]} scale={[0.24, 0.06, 0.24]} />
+      <mesh geometry={nodes.Base_Mesa008.geometry} material={ nodes.Base_Mesa008.material} position={[0.05, 0.14, 5.07]} scale={[0.08, -0.05, 0.08]} />
+      <mesh geometry={nodes.Mesa008.geometry} material={ materials.Metal} position={[0.09, 0.2, 5.07]} scale={[0.26, -0.01, 0.26]} />
+      <mesh geometry={nodes.Sombrilla008.geometry} material={ materials.Lapizlazuli} position={[0.07, 0.51, 5.08]} scale={[0.24, 0.06, 0.24]} />
+      <mesh geometry={nodes.Base_Mesa009.geometry} material={ nodes.Base_Mesa009.material} position={[1.46, 0.14, 4.07]} scale={[0.08, -0.05, 0.08]} />
+      <mesh geometry={nodes.Mesa009.geometry} material={ materials.Metal} position={[1.5, 0.2, 4.07]} scale={[0.26, -0.01, 0.26]} />
+      <mesh geometry={nodes.Sombrilla009.geometry} material={ materials.Lapizlazuli} position={[1.48, 0.51, 4.07]} scale={[0.24, 0.06, 0.24]} />
     </group>
   )
 }
