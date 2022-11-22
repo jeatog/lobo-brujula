@@ -4,7 +4,7 @@ import { OrbitControls } from '@react-three/drei';
 import './App.css';
 import Model from "./Queso2";
 import { Sidebar, Menu, MenuItem, useProSidebar, SubMenu } from 'react-pro-sidebar';
-import { Button, Form, FormGroup, Input, InputGroup, InputGroupText, Label } from 'reactstrap';
+import { Button, Form, FormGroup, Input, InputGroup, InputGroupText, Label, Modal, ModalBody, ModalFooter, ModalHeader } from 'reactstrap';
 import "bootstrap/dist/css/bootstrap.min.css"
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Logo from './assets/logo.png';
@@ -19,6 +19,9 @@ function App() {
    const [estado, setEstado] = useState({ name: "Default" });
    const [anchoPantalla, setAnchoPantalla] = useState('245px');
    const [cargando, setCargando] = useState();
+
+   const [modal, setModal] = useState(false);
+   const toggle = () => {setModal(!modal);}
 
    const [edificios, setEdificios] = useState([]);
    const [banos, setBanos] = useState([]);
@@ -117,7 +120,7 @@ function App() {
                </Popup>
             </Marker>
          );
-      }else{
+      } else {
          setMarcadores();
       }
    }
@@ -150,7 +153,7 @@ function App() {
 
    return (
       <>
-         <div className='Contenido' style={{ height: '100vh' }}>
+         <div className='Contenido mb-3' style={{ height: '100vh' }}>
             <div className='d-flex align-items-center' width='100%' style={{ overflowY: 'scroll', position: 'fixed', height: '100vh', backgroundColor: '#b2c0cb' }}>
                <Sidebar className='d-flex' collapsedWidth='0px'>
                   <Menu >
@@ -1145,13 +1148,13 @@ function App() {
                </div>
 
                <div className='d-flex justify-content-center align-items-center' style={{ display: 'inline-flex', width: '100%', marginLeft: '5px', height: '90%' }}>
-                  <div className='d-flex justify-content-center Mapa' id="mapa" >
-                     <MapContainer center={[19.004989, -98.204397]} zoom={300} scrollWheelZoom={false} {...mapaEstatico}>
+                  <div className='d-flex justify-content-center shadow p-3 mb-5 bg-body rounded' id="mapa" >
+                     <MapContainer center={[19.004989, -98.205]} zoom={300} scrollWheelZoom={false} {...mapaEstatico}>
                         <TileLayer
                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
-                        { marcadores }
+                        {marcadores}
                      </MapContainer>
                   </div>
                   {/* <Canvas
@@ -1198,6 +1201,35 @@ function App() {
 
 
          </div>
+         <div className="container" style={{ maxWidth: '100%' }}>
+            <footer className="d-flex flex-wrap justify-content-between align-items-center pt-3 fixed-bottom" style={{marginLeft: anchoPantalla}}>
+               <p className="col-md-4 mb-0 text-muted" />
+
+               <div className="d-flex align-items-center justify-content-center flex-column bd-highlight text-decoration-none">
+                  <div className="mb-2">
+                     <p onClick={toggle} className="mb-0" style={{ fontSize: '17px', color: 'white', fontWeight: 'bolder', textShadow: '1px 1px 1px black,', cursor: 'pointer' }}>Créditos</p>
+                  </div>
+               </div>
+
+               <p className="col-md-4 mb-0 text-muted" />
+
+            </footer>
+         </div>
+         <Modal isOpen={modal} toggle={toggle} className="clase_modal" centered>
+            <ModalHeader>
+                  Desarrollado por
+            </ModalHeader>
+            <ModalBody>
+                  <li>Díaz Aguilar Raymundo</li>
+                  <li>Frías Álvarez Juan Antonio</li>
+                  <li>Jiménez Morales Angelina</li>
+                  <li>Pérez González Luis Enrique</li>
+                  <li>Toledo García Jesús Alejandro</li>
+            </ModalBody>
+            <ModalFooter>
+               <Button onClick={toggle} style={{backgroundColor: '#00395E', borderColor: 'white'}}>Aceptar</Button>
+            </ModalFooter>
+         </Modal>
       </>
    );
 }

@@ -101,8 +101,13 @@ div.sc-jSUZER.daWgIu.sub-menu-content{
   border-radius: 20px;
 }
 
-.Mapa{
-  border: #004df3;
+.clase_modal .modal-content {
+  background-color: #00395E;
+  background-image: radial-gradient(#86a9bf, #00395E);
+  color: rgba(242, 242, 242, 1);
+  align-items: center;
+  text-align: center;
+  border-color: rgba(242, 242, 242, 1);
 }
 
 @keyframes App-logo-spin {
