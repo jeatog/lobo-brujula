@@ -14,6 +14,8 @@ import { MapContainer, TileLayer, Popup, Marker } from 'react-leaflet'
 
 function App() {
    document.body.style.backgroundColor = "#00395E";
+   document.body.style.backgroundImage = "radial-gradient(#86a9bf, #00395E)";
+
    const [estado, setEstado] = useState({ name: "Default" });
    const [anchoPantalla, setAnchoPantalla] = useState('245px');
    const [cargando, setCargando] = useState();
@@ -133,6 +135,17 @@ function App() {
             </div>
          </div>
       );
+   }
+
+   const mapaEstatico = {
+      zoomControl: false,
+      doubleClickZoom: false,
+      dragging: false,
+      zoomSnap: false,
+      zoomDelta: false,
+      trackResize: false,
+      touchZoom: false,
+      scrollWheelZoom: false
    }
 
    return (
@@ -940,24 +953,6 @@ function App() {
                                     <Label check>308</Label>
                                  </FormGroup>
                               </Form>
-
-                              <Form style={{ textAlign: 'center' }}>
-                                 <FormGroup check inline>
-                                    <Input type='checkbox' />
-                                    <Label check>311</Label>
-                                 </FormGroup>
-                                 <FormGroup check inline>
-                                    <Input type='checkbox' />
-                                    <Label check>312</Label>
-                                 </FormGroup>
-                              </Form>
-
-                              <Form style={{ textAlign: 'center' }}>
-                                 <FormGroup check inline>
-                                    <Input type='checkbox' />
-                                    <Label check>313</Label>
-                                 </FormGroup>
-                              </Form>
                               <hr />
                            </SubMenu>
 
@@ -1145,23 +1140,17 @@ function App() {
             <div className='Maqueta form-check-inline' style={{ marginRight: '0px', marginLeft: anchoPantalla, display: 'inline-block', overflowX: 'hidden', width: '100%' }}>
                <div className='d-flex'>
                   <Button style={{ backgroundColor: '#b2c0cb', color: '#212529', height: '44px' }} onClick={() => colapsar()}><i className='bi bi-list'></i></Button>
-                  <h1 className='d-flex align-items-center justify-content-center' style={{ color: '#eee', width: '100%', height: '100px', fontWeight: 'bolder', fontFamily: 'Paytone One, sans-serif' }}>Lobo Brújula</h1>
+                  <h1 className='d-flex align-items-center justify-content-center' style={{ color: '#eee', width: '100%', height: '70px', fontWeight: 'bolder', fontFamily: 'Paytone One, sans-serif', textShadow: '#00395E 10px 0 20px' }}>Lobo Brújula</h1>
+
                </div>
 
                <div className='d-flex justify-content-center align-items-center' style={{ display: 'inline-flex', width: '100%', marginLeft: '5px', height: '90%' }}>
                   <div className='d-flex justify-content-center Mapa' id="mapa" >
-                     <MapContainer center={[19.004989, -98.204397]} zoom={300} scrollWheelZoom={false}>
+                     <MapContainer center={[19.004989, -98.204397]} zoom={300} scrollWheelZoom={false} {...mapaEstatico}>
                         <TileLayer
                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
-                        <Marker position={[19.004989, -98.204397]}>
-                           <Popup>
-                              <p style={{ fontWeight: 'bold', textAlign: 'center' }}>Cancha Deportiva</p>
-                              <p style={{ textAlign: 'center' }}>Categoría: Puntos de Interés</p>
-                              <p style={{ textAlign: 'center' }}>Ubicación: Exteriores</p>
-                           </Popup>
-                        </Marker>
                         { marcadores }
                      </MapContainer>
                   </div>
