@@ -101,6 +101,25 @@ function App() {
       setCargando(false);
    }
 
+   let [marcadores, setMarcadores] = useState();
+
+   const capturarCheck = event => {
+      console.log(event.target.checked)
+      if (event.target.checked) {
+         console.log("entra true")
+         setMarcadores(
+            <Marker position={[19.0050014, -98.2057115]}>
+               <Popup>
+                  <p style={{ fontWeight: 'bold', textAlign: 'center' }}>Acceso 9</p>
+                  <p style={{ textAlign: 'center' }}>Categoría: Accesos</p>
+               </Popup>
+            </Marker>
+         );
+      }else{
+         setMarcadores();
+      }
+   }
+
    // useEffect(() => {
    //    bajarTablas();
    // }, []);
@@ -137,7 +156,7 @@ function App() {
                         <MenuItem>
                            <Form style={{ textAlign: 'center' }}>
                               <FormGroup check inline>
-                                 <Input type='checkbox' />
+                                 <Input type='checkbox' onChange={capturarCheck} />
                                  <Label check>Acceso 9</Label>
                               </FormGroup>
                               <FormGroup check inline>
@@ -1123,13 +1142,13 @@ function App() {
                </Sidebar>
             </div>
 
-            <div className='Maqueta form-check-inline' style={{ marginRight: '0px', marginLeft: anchoPantalla, display: 'inline-block', overflowX: 'hidden', width: '100%'}}>
+            <div className='Maqueta form-check-inline' style={{ marginRight: '0px', marginLeft: anchoPantalla, display: 'inline-block', overflowX: 'hidden', width: '100%' }}>
                <div className='d-flex'>
                   <Button style={{ backgroundColor: '#b2c0cb', color: '#212529', height: '44px' }} onClick={() => colapsar()}><i className='bi bi-list'></i></Button>
                   <h1 className='d-flex align-items-center justify-content-center' style={{ color: '#eee', width: '100%', height: '100px', fontWeight: 'bolder', fontFamily: 'Paytone One, sans-serif' }}>Lobo Brújula</h1>
                </div>
 
-               <div className='d-flex justify-content-center align-items-center' style={{ display: 'inline-flex', width: '100%', marginLeft: '5px', height: '90%'}}>
+               <div className='d-flex justify-content-center align-items-center' style={{ display: 'inline-flex', width: '100%', marginLeft: '5px', height: '90%' }}>
                   <div className='d-flex justify-content-center Mapa' id="mapa" >
                      <MapContainer center={[19.004989, -98.204397]} zoom={300} scrollWheelZoom={false}>
                         <TileLayer
@@ -1138,10 +1157,12 @@ function App() {
                         />
                         <Marker position={[19.004989, -98.204397]}>
                            <Popup>
-                              <p style={{fontWeight: 'bold'}}>Fuente FCC</p>
-                              <p>Ejemplo Marcador</p>
+                              <p style={{ fontWeight: 'bold', textAlign: 'center' }}>Cancha Deportiva</p>
+                              <p style={{ textAlign: 'center' }}>Categoría: Puntos de Interés</p>
+                              <p style={{ textAlign: 'center' }}>Ubicación: Exteriores</p>
                            </Popup>
                         </Marker>
+                        { marcadores }
                      </MapContainer>
                   </div>
                   {/* <Canvas
